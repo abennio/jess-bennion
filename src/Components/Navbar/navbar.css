@@ -1,0 +1,31 @@
+.navbar {
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+}
+
+.work {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact {
+  text-decoration: none;
+  color: #000000;
+  transition-property: border;
+  border-bottom: 0px;
+}
+
+.work:hover {
+  border-bottom: 1px solid #000000;
+  color: #000000;
+}
+
+.contact:hover {
+  border-bottom: 2px solid #000000;
+  color: #000000;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+}
+
+.logo {
+  height: 80px;
+}
