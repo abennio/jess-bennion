@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Birkenhead from "./Components/works-of-art/Birkenhead";
-import NavBar from "./Components/Navbar/navbar";
+import Birkenhead from "./Components/Tiles/Birkenhead/Birkenhead";
+import NavBar from "./Components/NavBar/navbar";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter, NavLink } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <NavBar />
-      <Birkenhead />
+      <NavLink to="/birkenhead">
+        <Birkenhead />
+      </NavLink>
     </BrowserRouter>
   </React.StrictMode>
 );

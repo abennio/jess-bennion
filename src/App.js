@@ -1,12 +1,15 @@
 import * as React from "react";
-import { Routes, Route, Layout } from "react-router-dom";
+import { Routes, Route, Layout, Switch } from "react-router-dom";
 import Contact from "./Components/Contact/contact";
 import Index from "./index";
 import NoMatch from "./Components/NoMatch";
+import { Navbar } from "react-bootstrap";
 
-export default function Router() {
+export default function App() {
   return (
     <div>
+      <Navbar />
+      <Switch>
       {/* Routes nest inside one another. Nested route paths build upon
             parent route paths, and nested route elements render inside
             parent route elements. See the note about <Outlet> below. */}
@@ -21,6 +24,7 @@ export default function Router() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+      </Switch>
     </div>
   );
 }

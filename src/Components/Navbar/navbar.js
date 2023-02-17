@@ -1,6 +1,6 @@
 import logo from "../../logo.png";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
@@ -10,21 +10,31 @@ function NavBar() {
       <Navbar>
         <Container>
           <Navbar.Brand>
-            <Link to="/" className="work">
+            <NavLink
+              to="/"
+              className="work"
+              activeClassName="active-work"
+              exact
+            >
               WORK
-            </Link>
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Brand>
-            <Link to="/contact" className="contact">
+            <NavLink
+              to="/contact"
+              className="contact"
+              activeClassName="active-contact"
+              exact
+            >
               CONTACT
-            </Link>
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <Link to="/">
+              <NavLink to="/" exact>
                 <img src={logo} className="logo" alt="logo" />
-              </Link>
+              </NavLink>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

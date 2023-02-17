@@ -1,5 +1,5 @@
 .navbar {
-  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 .work {
@@ -10,8 +10,6 @@
 .contact {
   text-decoration: none;
   color: #000000;
-  transition-property: border;
-  border-bottom: 0px;
 }
 
 .work:hover {
@@ -22,8 +20,7 @@
 .contact:hover {
   border-bottom: 2px solid #000000;
   color: #000000;
-  transition-duration: 5s;
-  transition-timing-function: ease-in;
+  transition: opacity 3s ease-in;
 }
 
 .logo {
