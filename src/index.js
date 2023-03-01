@@ -15,6 +15,7 @@ import UoCChristmas from "./Components/Tiles/UoCChristmas/UoCChristmas"
 import UoCTimeline from "./Components/Tiles/UoCTimeline/UoCTimeline"
 import WomenInTech from "./Components/Tiles/WomenInTech/WomenInTech"
 import NavBar from "./Components/NavBar/navbar";
+import Footer from "./Components/Footer/footer"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,12 +34,13 @@ root.render(
         <CWAC />
         <Emails />
         <Intro />
-        <KeepCup />
         <StudentNews />
+        <KeepCup />
         <UoCChristmas />
         <UoCTimeline />
         <WomenInTech />
       </div>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
