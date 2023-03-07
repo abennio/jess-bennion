@@ -12,8 +12,7 @@ function NavBar() {
           <Navbar.Brand>
             <NavLink
               to="/"
-              className="work"
-              activeClassName="active-work"
+              className={ ({ isActive }) => isActive ? "active-work" : "inactive-work"}
               exact
             >
               WORK
@@ -22,8 +21,7 @@ function NavBar() {
           <Navbar.Brand>
             <NavLink
               to="/contact"
-              className="contact"
-              activeClassName="active-contact"
+              className={ ({ isActive }) => isActive ? "active-contact" : "inactive-contact"}
               exact
             >
               CONTACT

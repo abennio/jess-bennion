@@ -3,26 +3,46 @@
   font-size: 0.5rem;
 }
 
-.work {
-  text-decoration: none;
+.active-work {
   color: #000000;
+  text-decoration: none;
+  border-bottom: 2px solid #000000;
 }
 
-.contact {
-  text-decoration: none;
+.inactive-work {
   color: #000000;
+  text-decoration: none;
 }
 
-.work:hover {
+.inactive-work:hover {
   border-bottom: 2px solid #000000;
   color: #000000;
   transition: opacity 3s ease-in;
 }
 
-.contact:hover {
+.active-work:hover {
+  color: #000000;
+}
+
+.active-contact {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 2px solid #000000;
+}
+
+.inactive-contact {
+  text-decoration: none;
+  color: #000000;
+}
+
+.inactive-contact:hover {
   border-bottom: 2px solid #000000;
   color: #000000;
   transition: opacity 3s ease-in;
+}
+
+.active-contact:hover {
+  color: #000000;
 }
 
 .logo {
