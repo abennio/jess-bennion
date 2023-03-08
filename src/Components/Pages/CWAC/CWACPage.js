@@ -1,10 +1,14 @@
-import mural from "../../portfolio-images/Birkenhead-Mural.png";
-import "./BirkenheadPage.css";
+import cwac from "../../../portfolio-images/CWAC/CWAC.png";
+import "./CWACPage.css";
 
-function BirkenheadPage() {
+function CWACPage() {
   return (
-    <div className="birkenhead-page">
-      <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
+    <div className="cwac-page">
+      <img
+        src={cwac}
+        className="cwac"
+        alt="Cheshire West and Chester Council videos"
+      />
       <div>
         <h1>Cheshire West and Cheshire</h1>
         <p>
@@ -49,4 +53,4 @@ function BirkenheadPage() {
   );
 }
 
-export default BirkenheadPage;
+export default CWACPage;

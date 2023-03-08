@@ -1,10 +1,14 @@
-import mural from "../../portfolio-images/Birkenhead-Mural.png";
-import "./BirkenheadPage.css";
+import card from "../../../portfolio-images/UoCChristmas/UoC-Christmas-Card.png";
+import "./UoCChristmasPage.css";
 
-function BirkenheadPage() {
+function UoCChristmasPage() {
   return (
-    <div className="birkenhead-page">
-      <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
+    <div className="christmas-card-page">
+      <img
+        src={card}
+        className="christmas-card"
+        alt="University of Chester Christmas animation for an e-card"
+      />
       <div>
         <h1>University of Chester E-Card</h1>
         <p>
@@ -29,4 +33,4 @@ function BirkenheadPage() {
   );
 }
 
-export default BirkenheadPage;
+export default UoCChristmasPage;

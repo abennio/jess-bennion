@@ -1,17 +1,20 @@
-import mural from "../../portfolio-images/Birkenhead-Mural.png";
-import "./BirkenheadPage.css";
+import icons from "../../../portfolio-images/Icons/icons-portfolio.png";
+import "./IconsPage.css";
 
-function BirkenheadPage() {
+function IconsPage() {
   return (
     <div className="birkenhead-page">
-      <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
+      <img src={icons} className="icons" alt="Icons" />
       <div>
         <h1>University of Chester Icons</h1>
-        <p>These are icons that were used in the University of Chester’s marketing
-          materials, including the corporate website, prospectuses and other printed materials.</p>
+        <p>
+          These are icons that were used in the University of Chester’s
+          marketing materials, including the corporate website, prospectuses and
+          other printed materials.
+        </p>
       </div>
     </div>
   );
 }
 
-export default BirkenheadPage;
+export default IconsPage;

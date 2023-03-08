@@ -1,10 +1,8 @@
-import mural from "../../portfolio-images/Birkenhead-Mural.png";
-import "./BirkenheadPage.css";
+import "./IntroPage.css";
 
-function BirkenheadPage() {
+function IntroPage() {
   return (
     <div className="birkenhead-page">
-      <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
       <div>
         <h1>Introduction Videos</h1>
         <p>
@@ -45,4 +43,4 @@ function BirkenheadPage() {
   );
 }
 
-export default BirkenheadPage;
+export default IntroPage;
