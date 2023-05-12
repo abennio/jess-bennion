@@ -18,26 +18,28 @@ import StudentNewsPage from "./Components/Pages/StudentNews/StudentNewsPage";
 import UoCChristmasPage from "./Components/Pages/UoCChristmas/UoCChristmasPage";
 import UoCTimelinePage from "./Components/Pages/UoCTimeline/UoCTimelinePage";
 import WomenInTechPage from "./Components/Pages/WomenInTech/WomenInTechPage";
-import ContactUs from "./Components/Pages/ContactUs/ContactUs";
+import NoMatch from "./Components/Pages/NoMatch/NoMatch";
+import Contact from "./Components/Contact/Contact";
 import Root from "./Components/Root";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      <Route path="/birkenhead" element={<BirkenheadPage />}></Route>
-      <Route path="/chester-mural" element={<ChesterMuralPage />}></Route>
-      <Route path="/chester-zoo" element={<ChesterZooPage />}></Route>
-      <Route path="/coronavirus" element={<CoronavirusPage />}></Route>
-      <Route path="/cwac" element={<CWACPage />}></Route>
-      <Route path="/emails" element={<EmailsPage />}></Route>
-      <Route path="/icons" element={<IconsPage />}></Route>
-      <Route path="/intro" element={<IntroPage />}></Route>
-      <Route path="/keep-cup" element={<KeepCupPage />}></Route>
-      <Route path="/student-news" element={<StudentNewsPage />}></Route>
-      <Route path="/uoc-christmas" element={<UoCChristmasPage />}></Route>
-      <Route path="/uoc-timeline" element={<UoCTimelinePage />}></Route>
-      <Route path="/women-in-tech" element={<WomenInTechPage />}></Route>
-      <Route path="/contact" element={<ContactUs />}></Route>
+    <Route path="/" element={<Root />} errorElement={<NoMatch />}>
+      <Route path="/birkenhead" element={<BirkenheadPage />} />
+      <Route path="/chester-mural" element={<ChesterMuralPage />} />
+      <Route path="/chester-zoo" element={<ChesterZooPage />} />
+      <Route path="/coronavirus" element={<CoronavirusPage />} />
+      <Route path="/cwac" element={<CWACPage />} />
+      <Route path="/emails" element={<EmailsPage />} />
+      <Route path="/icons" element={<IconsPage />} />
+      <Route path="/intro" element={<IntroPage />} />
+      <Route path="/keep-cup" element={<KeepCupPage />} />
+      <Route path="/student-news" element={<StudentNewsPage />} />
+      <Route path="/uoc-christmas" element={<UoCChristmasPage />} />
+      <Route path="/uoc-timeline" element={<UoCTimelinePage />} />
+      <Route path="/women-in-tech" element={<WomenInTechPage />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NoMatch />} />
     </Route>
   )
 );

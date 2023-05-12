@@ -1,3 +1,4 @@
+import React from "react";
 import card from "../../../portfolio-images/UoCChristmas/UoC-Christmas-Card.png";
 import "./UoCChristmasPage.css";
 

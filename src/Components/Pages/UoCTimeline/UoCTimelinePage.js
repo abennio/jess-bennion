@@ -1,3 +1,4 @@
+import React from "react";
 import mural from "../../../portfolio-images/UoCTimeline/whole-mural.jpeg";
 import start from "../../../portfolio-images/UoCTimeline/start-1847.png";
 import middle1 from "../../../portfolio-images/UoCTimeline/1921-1976.png";

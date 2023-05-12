@@ -1,3 +1,4 @@
+import React from "react";
 import "./Root.css";
 import Birkenhead from "../Components/Tiles/Birkenhead/Birkenhead";
 import ChesterMural from "../Components/Tiles/ChesterMural/ChesterMural";
@@ -14,29 +15,58 @@ import UoCTimeline from "../Components/Tiles/UoCTimeline/UoCTimeline";
 import WomenInTech from "../Components/Tiles/WomenInTech/WomenInTech";
 import NavBar from "../Components/NavBar/navbar";
 import Footer from "../Components/Footer/footer";
+import { Link, RouterProvider } from "react-router-dom";
 
-function Root() {
+export default function Root() {
   return (
-    <div>
-      <NavBar />
-      <div className="container">
-        <Birkenhead />
-        <Icons />
-        <ChesterMural />
-        <ChesterZoo />
-        <Coronavirus />
-        <CWAC />
-        <Emails />
-        <Intro />
-        <StudentNews />
-        <KeepCup />
-        <UoCChristmas />
-        <UoCTimeline />
-        <WomenInTech />
+    <>
+      <div className="root">
+        <NavBar />
+        <div className="container">
+          <RouterProvider>
+            <Link to="/birkenhead" className="link">
+              <Birkenhead />
+            </Link>
+            <Link to="/icons" className="link">
+              <Icons />
+            </Link>
+            <Link to="/chester-mural" className="link">
+              <ChesterMural />
+            </Link>
+            <Link to="/chester-zoo" className="link">
+              <ChesterZoo />
+            </Link>
+            <Link to="/coronavirus" className="link">
+              <Coronavirus />
+            </Link>
+            <Link to="/cwac" className="link">
+              <CWAC />
+            </Link>
+            <Link to="/emails" className="link">
+              <Emails />
+            </Link>
+            <Link to="/intro" className="link">
+              <Intro />
+            </Link>
+            <Link to="/student-news" className="link">
+              <StudentNews />
+            </Link>
+            <Link to="/keep-cup" className="link">
+              <KeepCup />
+            </Link>
+            <Link to="/christmas" className="link">
+              <UoCChristmas />
+            </Link>
+            <Link to="/timeline" className="link">
+              <UoCTimeline />
+            </Link>
+            <Link to="/women-in-tech" className="link">
+              <WomenInTech />
+            </Link>
+          </RouterProvider>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
-
-export default Root;

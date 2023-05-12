@@ -1,3 +1,4 @@
+import React from "react";
 import poster from "../../../portfolio-images/Coronavirus/poster.png";
 import "./Coronavirus.css";
 

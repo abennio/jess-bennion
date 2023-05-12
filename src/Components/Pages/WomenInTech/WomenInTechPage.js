@@ -1,3 +1,4 @@
+import React from "react";
 import modern from "../../../portfolio-images/WomenInTech/Women+in+Tech+-+Modern.gif";
 import retro from "../../../portfolio-images/WomenInTech/Women+in+Tech+Retro.gif";
 import "./WomenInTechPage.css";

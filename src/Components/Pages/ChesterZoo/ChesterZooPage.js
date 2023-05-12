@@ -1,3 +1,4 @@
+import React from "react";
 import zoo from "../../../portfolio-images/ChesterZoo/Chester-Zoo.png";
 import animation from "../../../portfolio-images/ChesterZoo/Animated+Illustrations.gif";
 import facebook from "../../../portfolio-images/ChesterZoo/Chester+Zoo+FB+Advert.gif";

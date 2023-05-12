@@ -1,3 +1,4 @@
+import React from "react";
 import poster from "../../../portfolio-images/Coronavirus/Poster+for+Test+Centres.jpeg";
 import "./CoronavirusPage.css";
 

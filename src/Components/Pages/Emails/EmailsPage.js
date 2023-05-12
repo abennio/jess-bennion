@@ -1,3 +1,4 @@
+import React from "react";
 import ach1eve from "../../../portfolio-images/Emails/ach1eve.png";
 import alumni from "../../../portfolio-images/Emails/Alumni.png";
 import shoutout from "../../../portfolio-images/Emails/student-shout-out.png";

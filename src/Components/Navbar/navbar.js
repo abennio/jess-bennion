@@ -1,3 +1,4 @@
+import React from "react";
 import logo from "../../logo.png";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
@@ -12,7 +13,9 @@ function NavBar() {
           <Navbar.Brand>
             <NavLink
               to="/"
-              className={ ({ isActive }) => isActive ? "active-work" : "inactive-work"}
+              className={({ isActive }) =>
+                isActive ? "active-work" : "inactive-work"
+              }
               exact
             >
               WORK
@@ -21,7 +24,9 @@ function NavBar() {
           <Navbar.Brand>
             <NavLink
               to="/contact"
-              className={ ({ isActive }) => isActive ? "active-contact" : "inactive-contact"}
+              className={({ isActive }) =>
+                isActive ? "active-contact" : "inactive-contact"
+              }
               exact
             >
               CONTACT

@@ -1,3 +1,4 @@
+import React from "react";
 import blackwhite from "../../../portfolio-images/KeepCup/Keep+Cup+Illustration+bw.png";
 import colour from "../../../portfolio-images/KeepCup/Keep+Cup+Illustration+colour.png";
 import aiken from "../../../portfolio-images/KeepCup/UoC_Aiken+Hall.png";

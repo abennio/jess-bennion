@@ -1,3 +1,4 @@
+import React from "react";
 import cwac from "../../../portfolio-images/CWAC/CWAC.png";
 import "./CWACPage.css";
 

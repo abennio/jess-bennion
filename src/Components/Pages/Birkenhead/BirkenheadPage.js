@@ -1,3 +1,4 @@
+import React from "react";
 import mural from "../../../portfolio-images/Birkenhead/Birkenhead-Mural.png";
 import "./BirkenheadPage.css";
 

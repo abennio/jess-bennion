@@ -1,3 +1,4 @@
+import React from "react";
 import pigeon from "../../../portfolio-images/Birkenhead/Birkenhead-Mural.png";
 import "./Birkenhead.css";
 

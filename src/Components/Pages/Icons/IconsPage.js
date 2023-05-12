@@ -1,3 +1,4 @@
+import React from "react";
 import icons from "../../../portfolio-images/Icons/icons-portfolio.png";
 import "./IconsPage.css";
 

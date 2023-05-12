@@ -1,3 +1,4 @@
+import React from "react";
 import instagram from "./Instagram Logo Pack/03 Black Glyph/Instagram_Glyph_Black.svg";
 import "./footer.css";
 import { NavLink } from "react-router-dom";
@@ -23,7 +24,11 @@ function Footer() {
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
               <NavLink to="/" exact>
-                <img src={instagram} className="instagram" alt="Instagram logo" />
+                <img
+                  src={instagram}
+                  className="instagram"
+                  alt="Instagram logo"
+                />
               </NavLink>
             </Navbar.Text>
           </Navbar.Collapse>

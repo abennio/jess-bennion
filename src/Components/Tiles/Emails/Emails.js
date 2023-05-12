@@ -1,3 +1,4 @@
+import React from "react";
 import student from "../../../portfolio-images/Emails/student-shoutout.png";
 import "./Emails.css";
 
