@@ -13,7 +13,7 @@ import StudentNews from "../Components/Tiles/StudentNews/StudentNews";
 import UoCChristmas from "../Components/Tiles/UoCChristmas/UoCChristmas";
 import UoCTimeline from "../Components/Tiles/UoCTimeline/UoCTimeline";
 import WomenInTech from "../Components/Tiles/WomenInTech/WomenInTech";
-import NavBar from "../Components/NavBar/navbar";
+import NavBar from "../Components/Navbar/navbar.js";
 import Footer from "../Components/Footer/footer";
 import { Link, RouterProvider } from "react-router-dom";
 

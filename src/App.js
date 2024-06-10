@@ -19,7 +19,7 @@ import UoCChristmasPage from "./Components/Pages/UoCChristmas/UoCChristmasPage";
 import UoCTimelinePage from "./Components/Pages/UoCTimeline/UoCTimelinePage";
 import WomenInTechPage from "./Components/Pages/WomenInTech/WomenInTechPage";
 import NoMatch from "./Components/Pages/NoMatch/NoMatch";
-import Contact from "./Components/Contact/Contact";
+import Contact from "./Components/Contact/contact";
 import Root from "./Components/Root";
 
 const router = createBrowserRouter(
