@@ -15,7 +15,7 @@ import UoCTimeline from "../Components/Tiles/UoCTimeline/UoCTimeline";
 import WomenInTech from "../Components/Tiles/WomenInTech/WomenInTech";
 import NavBar from "../Components/Navbar/navbar.js";
 import Footer from "../Components/Footer/footer";
-import { Link, RouterProvider } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 export default function Root() {
   return (
@@ -23,7 +23,6 @@ export default function Root() {
       <div className="root">
         <NavBar />
         <div className="container">
-          <RouterProvider>
             <Link to="/birkenhead" className="link">
               <Birkenhead />
             </Link>
@@ -63,10 +62,11 @@ export default function Root() {
             <Link to="/women-in-tech" className="link">
               <WomenInTech />
             </Link>
-          </RouterProvider>
         </div>
         <Footer />
       </div>
+      
+      <Outlet />
     </>
   );
 }
