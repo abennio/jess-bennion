@@ -1,9 +1,12 @@
 import React from "react";
 import "./IntroPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function IntroPage() {
   return (
     <div className="birkenhead-page">
+      <NavBar />
       <div>
         <h1>Introduction Videos</h1>
         <p>

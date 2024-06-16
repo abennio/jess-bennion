@@ -1,10 +1,13 @@
 import React from "react";
 import cwac from "../../../portfolio-images/CWAC/CWAC.png";
 import "./CWACPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function CWACPage() {
   return (
     <div className="cwac-page">
+      <NavBar />
       <img
         src={cwac}
         className="cwac"

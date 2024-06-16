@@ -26,10 +26,13 @@ import thorntonoutline from "../../../portfolio-images/KeepCup/UoC_Thornton+Outl
 import tower from "../../../portfolio-images/KeepCup/UoC_Tower.png";
 import toweroutline from "../../../portfolio-images/KeepCup/UoC_Tower+Outline.png";
 import "./KeepCupPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function KeepCupPage() {
   return (
     <div className="birkenhead-page">
+      <NavBar />
       <img
         src={colour}
         className="keep-cup"

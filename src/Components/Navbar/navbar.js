@@ -12,7 +12,7 @@ function NavBar() {
         <Container>
           <Navbar.Brand>
             <NavLink
-              to="/"
+              to="/jess-bennion"
               className={({ isActive }) =>
                 isActive ? "active-work" : "inactive-work"
               }
@@ -35,7 +35,7 @@ function NavBar() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <NavLink to="/" exact>
+              <NavLink to="/jess-bennion" exact>
                 <img src={logo} className="logo" alt="logo" />
               </NavLink>
             </Navbar.Text>

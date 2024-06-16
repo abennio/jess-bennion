@@ -2,10 +2,13 @@ import React from "react";
 import modern from "../../../portfolio-images/WomenInTech/Women+in+Tech+-+Modern.gif";
 import retro from "../../../portfolio-images/WomenInTech/Women+in+Tech+Retro.gif";
 import "./WomenInTechPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function WomenInTechPage() {
   return (
     <div className="women-in-tech-page">
+      <NavBar />
       <div>
         <h1>Women in Tech</h1>
         <p>

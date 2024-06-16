@@ -1,10 +1,13 @@
 import React from "react";
 import mural from "../../../portfolio-images/Birkenhead/Birkenhead-Mural.png";
 import "./BirkenheadPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function BirkenheadPage() {
   return (
     <div className="birkenhead-page">
+      <NavBar />
       <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
       <div>
         <h1>Birkenhead Mural</h1>

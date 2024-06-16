@@ -1,8 +1,10 @@
 import React from "react";
+import NavBar from "../../Navbar/navbar";
 
 function Contact() {
   return (
     <div className="contact">
+      <NavBar />
       <div className="description">
         <h1>Hello</h1>
         <p>

@@ -1,10 +1,13 @@
 import React from "react";
 import icons from "../../../portfolio-images/Icons/icons-portfolio.png";
 import "./IconsPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function IconsPage() {
   return (
     <div className="birkenhead-page">
+      <NavBar />
       <img src={icons} className="icons" alt="Icons" />
       <div>
         <h1>University of Chester Icons</h1>

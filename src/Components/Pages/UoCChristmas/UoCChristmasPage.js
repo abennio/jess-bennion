@@ -1,10 +1,13 @@
 import React from "react";
 import card from "../../../portfolio-images/UoCChristmas/UoC-Christmas-Card.png";
 import "./UoCChristmasPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function UoCChristmasPage() {
   return (
     <div className="christmas-card-page">
+      <NavBar />
       <img
         src={card}
         className="christmas-card"

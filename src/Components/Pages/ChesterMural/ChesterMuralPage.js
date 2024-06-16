@@ -10,10 +10,13 @@ import image7 from "../../../portfolio-images/ChesterMural/chester-mural-website
 import image8 from "../../../portfolio-images/ChesterMural/chester-mural-website-08.png";
 import image9 from "../../../portfolio-images/ChesterMural/chester-mural-website-09.png";
 import "./ChesterMuralPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function ChesterMuralPage() {
   return (
     <div className="chester-mural-page">
+      <NavBar />
       <div>
         <h1>Chester Mural</h1>
         <p>

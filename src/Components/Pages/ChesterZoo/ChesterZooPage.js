@@ -5,11 +5,14 @@ import facebook from "../../../portfolio-images/ChesterZoo/Chester+Zoo+FB+Advert
 import geofilter from "../../../portfolio-images/ChesterZoo/Geofilter-01.png";
 import banner from "../../../portfolio-images/ChesterZoo/Web+banner.jpeg";
 import "./ChesterZooPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function ChesterZooPage() {
   return (
     <>
       <div className="chester-zoo-page">
+        <NavBar />
         <img src={zoo} className="chester-zoo" alt="Chester Zoo Logo" />
         <div>
           <h1>Chester Zoo</h1>

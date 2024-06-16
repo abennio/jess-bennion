@@ -5,12 +5,15 @@ import middle1 from "../../../portfolio-images/UoCTimeline/1921-1976.png";
 import middle2 from "../../../portfolio-images/UoCTimeline/1989-2009.png";
 import end from "../../../portfolio-images/UoCTimeline/2013-end.png";
 import honoraries from "../../../portfolio-images/UoCTimeline/honoraries-alumni.png";
+import NavBar from "../../Navbar/navbar";
+
 
 import "./UoCTimelinePage.css";
 
 function UoCTimelinePage() {
   return (
     <div className="timeline-page">
+      <NavBar />
       <img
         src={mural}
         className="timeline"

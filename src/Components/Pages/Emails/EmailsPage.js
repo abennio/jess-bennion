@@ -4,10 +4,13 @@ import alumni from "../../../portfolio-images/Emails/Alumni.png";
 import shoutout from "../../../portfolio-images/Emails/student-shout-out.png";
 import cestrian from "../../../portfolio-images/Emails/the-cestrian.png";
 import "./EmailsPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function EmailsPage() {
   return (
     <div className="emails-page">
+      <NavBar />
       <img
         src={ach1eve}
         className="ach1eve"

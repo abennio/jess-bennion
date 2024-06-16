@@ -1,8 +1,11 @@
 import React from "react";
+import NavBar from "../../Navbar/navbar";
+
 
 function NoMatch() {
   return (
     <div className="noMatch">
+      <NavBar />
       <div className="description">
         <h1>Argh, 404!</h1>
         <p>

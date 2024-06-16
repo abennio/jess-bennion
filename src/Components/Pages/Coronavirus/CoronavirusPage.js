@@ -1,10 +1,13 @@
 import React from "react";
 import poster from "../../../portfolio-images/Coronavirus/Poster+for+Test+Centres.jpeg";
 import "./CoronavirusPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function CoronavirusPage() {
   return (
     <div className="coronavirus-page">
+      <NavBar />
       <img src={poster} className="coronavirus" alt="Coronavirus Poster" />
       <div>
         <h1>Coronavirus Poster</h1>

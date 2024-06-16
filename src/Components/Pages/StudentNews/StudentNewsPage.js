@@ -3,10 +3,13 @@ import home from "../../../portfolio-images/StudentNews/Homepage.png";
 import image from "../../../portfolio-images/StudentNews/image-asset.png";
 import article from "../../../portfolio-images/StudentNews/screencapture-studentnews-chester-ac-uk-national-award-for-student-nurse-for-giving-a-voice-to-others-2021-02-23-19_08_40.png";
 import "./StudentNewsPage.css";
+import NavBar from "../../Navbar/navbar";
+
 
 function StudentNewsPage() {
   return (
     <div className="student-news-page">
+      <NavBar />
       <div>
         <h1>Student News Website</h1>
         <p>
