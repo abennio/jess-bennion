@@ -1,11 +1,14 @@
-.container {
+.page-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* align-content: center; */
   margin: 0;
   padding: 0;
+  /* gap: 10px; */
 }
 
-.link {
-  width: 100%;
+.link-image {
+  width: 30%;
+  height: auto;
 }

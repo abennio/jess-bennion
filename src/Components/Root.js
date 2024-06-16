@@ -22,46 +22,72 @@ export default function Root() {
     <>
       <div className="root">
         <NavBar />
-        <div className="container">
-            <Link to="/birkenhead" className="link">
-              <Birkenhead />
+        <div className="page-container">
+          <div className="link-image">
+            <Link to="/birkenhead">
+                <Birkenhead />
             </Link>
-            <Link to="/icons" className="link">
-              <Icons />
+          </div>
+          <div className="link-image">
+            <Link to="/icons">
+                <Icons />
             </Link>
-            <Link to="/chester-mural" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/chester-mural">
               <ChesterMural />
             </Link>
-            <Link to="/chester-zoo" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/chester-zoo">
               <ChesterZoo />
             </Link>
-            <Link to="/coronavirus" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/coronavirus">
               <Coronavirus />
             </Link>
-            <Link to="/cwac" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/cwac">
               <CWAC />
             </Link>
-            <Link to="/emails" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/emails">
               <Emails />
             </Link>
-            <Link to="/intro" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/intro">
               <Intro />
             </Link>
-            <Link to="/student-news" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/student-news">
               <StudentNews />
             </Link>
-            <Link to="/keep-cup" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/keep-cup">
               <KeepCup />
             </Link>
-            <Link to="/christmas" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/christmas">
               <UoCChristmas />
             </Link>
-            <Link to="/timeline" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/timeline">
               <UoCTimeline />
             </Link>
-            <Link to="/women-in-tech" className="link">
+          </div>
+          <div className="link-image">
+            <Link to="/women-in-tech">
               <WomenInTech />
             </Link>
+          </div>
         </div>
         <Footer />
       </div>
