@@ -6,6 +6,7 @@ import middle2 from "../../../portfolio-images/UoCTimeline/1989-2009.png";
 import end from "../../../portfolio-images/UoCTimeline/2013-end.png";
 import honoraries from "../../../portfolio-images/UoCTimeline/honoraries-alumni.png";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 import "./UoCTimelinePage.css";
@@ -55,6 +56,7 @@ function UoCTimelinePage() {
           alt="The final section of the mural"
         />
       </div>
+      <Footer />
     </div>
   );
 }

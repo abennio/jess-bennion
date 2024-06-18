@@ -1,20 +1,16 @@
 import React from "react";
-import cwac from "../../../portfolio-images/CWAC/CWAC.png";
 import "./CWACPage.css";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 function CWACPage() {
   return (
     <div className="cwac-page">
       <NavBar />
-      <img
-        src={cwac}
-        className="cwac"
-        alt="Cheshire West and Chester Council videos"
-      />
-      <div>
+      <div className="description">
         <h1>Cheshire West and Cheshire</h1>
+        <br></br>
         <p>
           The University worked with Cheshire West and Chester Council to create
           videos for students. These were to make students aware of recycling
@@ -34,6 +30,7 @@ function CWACPage() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        <br></br>
         <iframe
           width="560"
           height="315"
@@ -43,6 +40,7 @@ function CWACPage() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+        <br></br>
         <iframe
           width="560"
           height="315"
@@ -53,6 +51,7 @@ function CWACPage() {
           allowfullscreen
         ></iframe>
       </div>
+      <Footer />
     </div>
   );
 }

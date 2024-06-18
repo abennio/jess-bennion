@@ -1,13 +1,14 @@
 import React from "react";
 import "./IntroPage.css";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 function IntroPage() {
   return (
-    <div className="birkenhead-page">
+    <div className="intro-page">
       <NavBar />
-      <div>
+      <div className="description">
         <h1>Introduction Videos</h1>
         <p>
           I was asked to animate some explainer videos aimed at new students.
@@ -43,6 +44,7 @@ function IntroPage() {
           allowfullscreen
         ></iframe>
       </div>
+      <Footer />
     </div>
   );
 }

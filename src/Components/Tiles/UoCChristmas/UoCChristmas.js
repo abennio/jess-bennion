@@ -8,7 +8,7 @@ function UoCChristmas() {
       <img
         src={christmas}
         className="christmas"
-        alt="An illustration of two semi-detached houses with Chrismas decorations and snow"
+        alt="An illustration of two semi-detached houses with Christmas decorations and snow"
       />
       <div className="text-overlay">
         <div className="text">

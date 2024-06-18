@@ -2,6 +2,7 @@ import React from "react";
 import card from "../../../portfolio-images/UoCChristmas/UoC-Christmas-Card.png";
 import "./UoCChristmasPage.css";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 function UoCChristmasPage() {
@@ -33,6 +34,7 @@ function UoCChristmasPage() {
           allowfullscreen
         ></iframe>
       </div>
+      <Footer />
     </div>
   );
 }

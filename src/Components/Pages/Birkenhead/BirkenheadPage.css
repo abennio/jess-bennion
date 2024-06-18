@@ -5,3 +5,14 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 50%;
+    margin: 2rem;
+}

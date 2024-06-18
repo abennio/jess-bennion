@@ -74,12 +74,12 @@ export default function Root() {
             </Link>
           </div>
           <div className="link-image">
-            <Link to="/christmas">
+            <Link to="/uoc-christmas">
               <UoCChristmas />
             </Link>
           </div>
           <div className="link-image">
-            <Link to="/timeline">
+            <Link to="/uoc-timeline">
               <UoCTimeline />
             </Link>
           </div>

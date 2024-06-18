@@ -3,6 +3,7 @@ import modern from "../../../portfolio-images/WomenInTech/Women+in+Tech+-+Modern
 import retro from "../../../portfolio-images/WomenInTech/Women+in+Tech+Retro.gif";
 import "./WomenInTechPage.css";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 function WomenInTechPage() {
@@ -31,6 +32,7 @@ function WomenInTechPage() {
           alt="Animation of someone coding on a retro interface"
         />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -5,3 +5,57 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.scroll-container {
+    display: flex;
+    height: 20em;
+}
+
+.chester-mural-description {
+    margin: 2rem;
+}
+
+.bridgeStreet {
+    width: auto;
+    margin: 1rem;
+}
+
+.storyhouse {
+    width: auto;
+    margin: 1rem;
+}
+
+.chesterCross {
+    width: auto;
+    margin: 1rem;
+}
+
+.townHall {
+    width: auto;
+    margin: 1rem;
+}
+
+.bandstand {
+    width: auto;
+    margin: 1rem;
+}
+
+.ladyDiana {
+    width: auto;
+    margin: 1rem;
+}
+
+.cathedral {
+    width: auto;
+    margin: 1rem;
+}
+
+.queensParkBridge {
+    width: auto;
+    margin: 1rem;
+}
+
+.eastgateClock {
+    width: auto;
+    margin: 1rem;
+}

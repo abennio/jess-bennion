@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 
 function NoMatch() {
@@ -13,6 +14,7 @@ function NoMatch() {
           the back button and youll be right as rain.
         </p>
       </div>
+      <Footer />
     </div>
   );
 }

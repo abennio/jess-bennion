@@ -5,3 +5,9 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.scrollable-news {
+    overflow: auto;
+    height: 30em;
+    width: 60%;
+}

@@ -5,3 +5,18 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.icons-image{
+    width: 50%;
+}
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icons-description {
+    width: 40%;
+    margin: 2rem;
+}

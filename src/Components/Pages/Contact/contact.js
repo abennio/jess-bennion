@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 
 function Contact() {
   return (
@@ -14,6 +15,7 @@ function Contact() {
           chat.
         </p>
       </div>
+      <Footer />
     </div>
   );
 }
