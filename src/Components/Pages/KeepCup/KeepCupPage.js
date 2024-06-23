@@ -32,28 +32,32 @@ import Footer from "../../Footer/footer";
 
 function KeepCupPage() {
   return (
-    <div className="birkenhead-page">
+    <div className="keep-cup-page">
       <NavBar />
-      <div className="description">
-        <h1>Keep Cup Design</h1>
-          <p>
-            The University wanted to hand out free keep cups for freshers in
-            University accommodation as an incentive to avoid using coffee cups
-            when purchasing coffee on campus. I was asked to design a cup that
-            showed off the buildings on each of the campuses.
-          </p>
+      <div className="split-page">
+        <div className="cup-image">
+          <img
+            src={colour}
+            className="keep-cup"
+            alt="Keep Cup Design that includes coloured illustrations of a number of different buildings"
+          />
+          <img
+            src={blackwhite}
+            className="keep-cup-bw"
+            alt="Keep Cup Design that includes black and white illustrations of a number of different buildings"
+          />
+        </div>
+        <div className="keep-cup-description">
+          <h1>Keep Cup Design</h1>
+            <p>
+              The University wanted to hand out free keep cups for freshers in
+              University accommodation as an incentive to avoid using coffee cups
+              when purchasing coffee on campus. I was asked to design a cup that
+              showed off the buildings on each of the campuses.
+            </p>
+        </div>
       </div>
-      <img
-        src={colour}
-        className="keep-cup"
-        alt="Keep Cup Design that includes coloured illustrations of a number of different buildings"
-      />
       <div>
-        <img
-          src={blackwhite}
-          className="keep-cup-bw"
-          alt="Keep Cup Design that includes black and white illustrations of a number of different buildings"
-        />
         <img
           src={aiken}
           className="aiken"

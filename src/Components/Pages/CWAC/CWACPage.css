@@ -6,6 +6,24 @@ p {
     font-family: sans-serif;
 }
 
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 50%;
+    margin: 2rem;
+}
+
 iFrame {
     margin-left: 2em;
+}
+
+.row-videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

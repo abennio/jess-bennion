@@ -15,21 +15,23 @@ function UoCTimelinePage() {
   return (
     <div className="timeline-page">
       <NavBar />
-      <img
-        src={mural}
-        className="timeline"
-        alt="The mural displayed on the Grosvenor building"
-      />
-      <div>
-        <h1>University of Chester Timeline</h1>
-        <p>
-          The University has a process for accepting any suggestions staff may
-          have to improve the University. A staff member suggested having a wall
-          on campus to show a timeline of the University’s achievements over the
-          years. I came up with an idea to keep it simple but eye-catching, on
-          each panel it includes an illustration demonstrating what happened in
-          that year. This was all designed in Adobe Illustrator.
-        </p>
+      <div className="split-page">
+        <img
+          src={mural}
+          className="timeline"
+          alt="The mural displayed on the Grosvenor building"
+        />
+        <div className="timeline-description">
+          <h1>University of Chester Timeline</h1>
+          <p>
+            The University has a process for accepting any suggestions staff may
+            have to improve the University. A staff member suggested having a wall
+            on campus to show a timeline of the University’s achievements over the
+            years. I came up with an idea to keep it simple but eye-catching, on
+            each panel it includes an illustration demonstrating what happened in
+            that year. This was all designed in Adobe Illustrator.
+          </p>
+        </div>
         <img
           src={start}
           className="timeline-start"

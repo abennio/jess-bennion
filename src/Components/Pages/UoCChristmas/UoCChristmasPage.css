@@ -5,3 +5,9 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

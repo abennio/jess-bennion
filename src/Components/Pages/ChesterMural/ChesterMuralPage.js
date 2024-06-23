@@ -27,11 +27,10 @@ function ChesterMuralPage() {
           drawn in Illustrator.
         </p>
       </div>
-      <div>
-        <div className="chester-mural-main-image">
-          <img src={chesterMural} className="chester-mural" alt="Chester Mural" />
+        <div>
+          <img src={chesterMural} className="chester-mural-main-image" alt="Chester Mural" />
         </div>
-        <div className="scroll-container">
+        <div className="horizontal-scroll-container">
           <img src={bridgeStreet} className="bridgeStreet" alt="Chester Mural" />
           <img src={storyhouse} className="storyhouse" alt="Chester Mural" />
           <img src={chesterCross} className="chesterCross" alt="Chester Mural" />
@@ -42,7 +41,6 @@ function ChesterMuralPage() {
           <img src={queensParkBridge} className="queensParkBridge" alt="Chester Mural" />
           <img src={eastgateClock} className="eastgateClock" alt="Chester Mural" />
         </div>
-      </div>
       <Footer />
     </div>
   );

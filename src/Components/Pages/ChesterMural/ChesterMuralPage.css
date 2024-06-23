@@ -6,56 +6,74 @@ p {
     font-family: sans-serif;
 }
 
-.scroll-container {
-    display: flex;
+/* .horizontal-scroll-container {
+    overflow: auto;
     height: 20em;
+    width: 100%;
+} */
+
+.chester-mural-page {
+    width: 100%;
 }
 
 .chester-mural-description {
     margin: 2rem;
 }
 
+.chester-mural-main-image {
+    width: 100%;
+}
+
 .bridgeStreet {
-    width: auto;
+    /* width: 30%; */
+    height: 30em;
     margin: 1rem;
 }
 
 .storyhouse {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .chesterCross {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .townHall {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .bandstand {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .ladyDiana {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .cathedral {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .queensParkBridge {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }
 
 .eastgateClock {
-    width: auto;
+    /* width: auto; */
+    height: 30em;
     margin: 1rem;
 }

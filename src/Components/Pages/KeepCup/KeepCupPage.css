@@ -5,3 +5,26 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cup-image {
+    width: 50%;
+}
+
+.keep-cup {
+    width: 50%;
+}
+
+.keep-cup-bw{
+    width: 50%;
+}
+
+.keep-cup-description {
+    margin: 2rem;
+    width: 30%;
+}

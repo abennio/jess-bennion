@@ -5,3 +5,38 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.timeline {
+    width: 45%;
+}
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.timeline-description {
+    width: 50%;
+    margin: 2rem;
+}
+
+.timeline-start {
+    width: 100%;
+}
+
+.timeline-middle1 {
+    width: 100%;
+}
+
+.timeline-middle2 {
+    width: 100%;
+}
+
+.timeline-end {
+    width: 100%;
+}
+
+.timeline-honoraries {
+    width: 100%;
+}

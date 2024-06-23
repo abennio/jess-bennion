@@ -7,7 +7,7 @@ function KeepCup() {
     <div className="cup">
       <img
         src={cup}
-        className="binks"
+        className="binks-tile"
         alt="Illustration of the Binks building at University of Chester"
       />
       <div className="text-overlay">

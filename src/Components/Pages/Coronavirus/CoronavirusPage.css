@@ -6,6 +6,17 @@ p {
     font-family: sans-serif;
 }
 
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 40%;
+    margin: 2rem;
+}
+
 .coronavirus-image {
-    width: 50%;
+    width: 40%;
 }

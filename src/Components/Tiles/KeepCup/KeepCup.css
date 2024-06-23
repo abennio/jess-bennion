@@ -14,12 +14,12 @@
   font-family: 'Rubik', sans-serif;
 }
 
-.text-overlay:hover {
-  opacity: 0.8;
+.binks-tile {
+  width: 100%;
 }
 
-.binks {
-  width: 100%;
+.text-overlay:hover {
+  opacity: 0.8;
 }
 
 .text {

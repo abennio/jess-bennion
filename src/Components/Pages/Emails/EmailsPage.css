@@ -9,5 +9,5 @@ p {
 .scrollable {
     overflow: auto;
     height: 30em;
-    width: 40%;
+    width: 50%;
 }
