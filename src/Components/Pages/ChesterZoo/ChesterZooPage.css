@@ -5,3 +5,57 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.zoo-image-container p {
+    padding: 1rem;
+}
+
+.zoo-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chester-zoo-animation {
+    width: 40rem;
+    padding: 1rem;
+}
+
+.zoo-animation-and-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.chester-zoo-banner {
+    width: 40rem;
+    padding: 1rem;
+}
+
+.zoo-banner-and-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.chester-zoo-facebook {
+    width: 40rem;
+    padding: 1rem;
+}
+
+.zoo-facebook-and-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.chester-zoo-geofilter {
+    width: 40rem;
+    padding: 1rem;
+}
+
+.zoo-geofilter-and-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.zoo-geofilter-and-desc p {
+    padding: 1rem;
+}

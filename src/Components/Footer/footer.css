@@ -19,11 +19,11 @@
   transition: opacity 3s ease-in;
 }
 
-.contact:hover {
+/* .contact:hover {
   border-bottom: 2px solid #000000;
   color: #000000;
   transition: opacity 3s ease-in;
-}
+} */
 
 .logo {
   height: 80px;

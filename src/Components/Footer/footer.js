@@ -12,7 +12,7 @@ function Footer() {
         <Container>
           <Navbar.Brand>
             <NavLink
-              to="/"
+              to="/jess-bennion"
               className="work"
               activeClassName="active-work"
               exact

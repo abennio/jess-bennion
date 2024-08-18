@@ -1,5 +1,19 @@
-.split-page {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.contact-description {
+    text-align: center;
+    height: 40rem;
+    padding-left: 40rem;
+    padding-right: 40rem;
+    padding-top: 10rem;
+}
+
+.contact-description p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact-button {
+    border: 2px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
 }

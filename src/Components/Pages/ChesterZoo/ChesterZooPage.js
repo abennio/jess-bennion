@@ -25,32 +25,40 @@ function ChesterZooPage() {
           </p>
         </div>
       </div>
-      <div>
-        <img
-          src={animation}
-          className="chester-zoo-animation"
-          alt="Chester Zoo Animation"
-        />
-        <p>Animation</p>
-        <img
-          src={banner}
-          className="chester-zoo-banner"
-          alt="Chester Zoo Web Banner"
-        />
-        <p>Website Banner</p>
-        <img
-          src={facebook}
-          className="chester-zoo-facebook"
-          alt="Chester Zoo Facebook Advert"
-        />
-        <p>Facebook Ad</p>
-        <img
-          src={geofilter}
-          className="chester-zoo-geofilter"
-          alt="Chester Zoo Geofilter"
-        />
-        <p>Snapchat Geofilter</p>
+      <div className="zoo-image-container">
+        <div className="zoo-animation-and-desc">
+          <p>Animation</p>
+          <img
+            src={animation}
+            className="chester-zoo-animation"
+            alt="Chester Zoo Animation"
+          />
+        </div>
+        <div className="zoo-banner-and-desc">
+          <p>Website Banner</p>
+          <img
+            src={banner}
+            className="chester-zoo-banner"
+            alt="Chester Zoo Web Banner"
+          />
+        </div>
+        <div className="zoo-facebook-and-desc">
+          <p>Facebook Ad</p>
+          <img
+            src={facebook}
+            className="chester-zoo-facebook"
+            alt="Chester Zoo Facebook Advert"
+          />
+        </div>
       </div>
+        <div className="zoo-geofilter-and-desc">
+          <p>Snapchat Geofilter</p>
+          <img
+            src={geofilter}
+            className="chester-zoo-geofilter"
+            alt="Chester Zoo Geofilter"
+          />
+        </div>
       <Footer />
     </>
   );

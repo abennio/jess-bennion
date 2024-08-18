@@ -1,5 +1,5 @@
 import React from "react";
-import student from "../../../portfolio-images/Emails/student-shoutout.png";
+import student from "../../../portfolio-images/Emails/student-shoutout-tile.png";
 import "./Emails.css";
 
 function Emails() {

@@ -1,5 +1,5 @@
 import React from "react";
-import icons from "../../../portfolio-images/Icons/icons-portfolio.png";
+import icons from "../../../portfolio-images/Icons/icons-portfolio-tile.png";
 import "./Icons.css";
 
 function Icons() {
