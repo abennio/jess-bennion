@@ -1,23 +1,56 @@
-h1 {
-    font-family: sans-serif;
+.chester-zoo-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
 }
 
-p {
+.chester-zoo-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12rem;
+}
+
+.chester-zoo-description p {
     font-family: sans-serif;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.zoo-image-container h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .zoo-image-container p {
-    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(103, 101, 101);
+    width: 30rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 .zoo-image-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.zoo-three-image-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 10rem;
 }
 
 .chester-zoo-animation {
-    width: 40rem;
+    width: 30rem;
     padding: 1rem;
 }
 
@@ -27,7 +60,7 @@ p {
 }
 
 .chester-zoo-banner {
-    width: 40rem;
+    width: 30rem;
     padding: 1rem;
 }
 
@@ -37,7 +70,7 @@ p {
 }
 
 .chester-zoo-facebook {
-    width: 40rem;
+    width: 30rem;
     padding: 1rem;
 }
 
@@ -47,7 +80,7 @@ p {
 }
 
 .chester-zoo-geofilter {
-    width: 40rem;
+    width: 25rem;
     padding: 1rem;
 }
 
@@ -56,6 +89,6 @@ p {
     flex-direction: column;
 }
 
-.zoo-geofilter-and-desc p {
+.zoo-geofilter-and-desc h2 {
     padding: 1rem;
 }
