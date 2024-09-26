@@ -3,7 +3,7 @@ import "./Root.css";
 import Birkenhead from "../Components/Tiles/Birkenhead/Birkenhead";
 import ChesterMural from "../Components/Tiles/ChesterMural/ChesterMural";
 import ChesterZoo from "../Components/Tiles/ChesterZoo/ChesterZoo";
-import Coronavirus from "../Components/Tiles/Coronavirus/Coronavirus";
+import Radio from "./Tiles/Radio/Radio.js";
 import CWAC from "../Components/Tiles/CWAC/CWAC";
 import Emails from "../Components/Tiles/Emails/Emails";
 import Icons from "../Components/Tiles/Icons/Icons";
@@ -13,6 +13,9 @@ import StudentNews from "../Components/Tiles/StudentNews/StudentNews";
 import UoCChristmas from "../Components/Tiles/UoCChristmas/UoCChristmas";
 import UoCTimeline from "../Components/Tiles/UoCTimeline/UoCTimeline";
 import WomenInTech from "../Components/Tiles/WomenInTech/WomenInTech";
+import UoCRebrand from "../Components/Tiles/UoCRebrand/UoCRebrand.js";
+import Clearing from "../Components/Tiles/Clearing/Clearing.js"
+import StudentShoutOut from "../Components/Tiles/StudentShoutOut/StudentShoutOut.js"
 import NavBar from "../Components/Navbar/navbar.js";
 import Footer from "../Components/Footer/footer";
 import { Outlet, Link } from "react-router-dom";
@@ -29,8 +32,8 @@ export default function Root() {
             </Link>
           </div>
           <div className="link-image">
-            <Link to="/icons">
-                <Icons />
+            <Link to="/women-in-tech">
+              <WomenInTech />
             </Link>
           </div>
           <div className="link-image">
@@ -44,8 +47,8 @@ export default function Root() {
             </Link>
           </div>
           <div className="link-image">
-            <Link to="/coronavirus">
-              <Coronavirus />
+            <Link to="/radio">
+              <Radio />
             </Link>
           </div>
           <div className="link-image">
@@ -74,6 +77,11 @@ export default function Root() {
             </Link>
           </div>
           <div className="link-image">
+            <Link to="/icons">
+                <Icons />
+            </Link>
+          </div>
+          <div className="link-image">
             <Link to="/uoc-christmas">
               <UoCChristmas />
             </Link>
@@ -84,8 +92,18 @@ export default function Root() {
             </Link>
           </div>
           <div className="link-image">
-            <Link to="/women-in-tech">
-              <WomenInTech />
+            <Link to="/uoc-rebrand">
+              <UoCRebrand />
+            </Link>
+          </div>
+          <div className="link-image">
+            <Link to="/clearing">
+                <Clearing />
+            </Link>
+          </div>
+          <div className="link-image">
+            <Link to="/student-shout-out">
+                <StudentShoutOut />
             </Link>
           </div>
         </div>

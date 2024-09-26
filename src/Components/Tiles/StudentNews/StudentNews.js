@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../portfolio-images/StudentNews/student-news.png";
+import logo from "../../../portfolio-images/StudentNews/student-news-tile.png";
 import "./StudentNews.css";
 
 function StudentNews() {
