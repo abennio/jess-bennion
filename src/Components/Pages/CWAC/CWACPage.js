@@ -18,7 +18,7 @@ function CWACPage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        <div className="description">
+        <div className="cwac-description">
           <h1>Cheshire West and Cheshire</h1>
           <br></br>
           <p>

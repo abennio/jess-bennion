@@ -12,7 +12,7 @@ function EmailsPage() {
   return (
     <div className="emails-page">
       <NavBar />
-      <div className="description">
+      <div className="emails-description">
         <h1>Emails</h1>
         <p>
           Here are a few examples of emails I have designed and coded using HTML
@@ -25,9 +25,9 @@ function EmailsPage() {
           className="ach1eve"
           alt="Achieve, a 1 replaces the i"
         />
-        <p>
+        <h2>
           Ach1eve Magazine email
-        </p>
+        </h2>
         <div className="scrollable">
           <img
             src={shoutout}
@@ -35,8 +35,11 @@ function EmailsPage() {
             alt="Student Shout Out Email"
           />
         </div>
+        <h2>
+          Student Shout Out Email
+        </h2>
         <p>
-          Student Shout Out Email - This goes out to all students once a month
+          This goes out to all students once a month
           to give them a run down of the goings on inside and outside the
           University. It also gives them tips on how to stay out of trouble and
           get more involved. The idea is to keep more prominent stories at the
@@ -46,15 +49,18 @@ function EmailsPage() {
         <div className="scrollable">
           <img src={alumni} className="alumni" alt="Alumni newsletter" />
         </div>
+        <h2>
+          Alumni Newsletter
+        </h2>
         <p>
-          Alumni Newsletter - An email that is sent out quarterly to update
+          An email that is sent out quarterly to update
           Alumni on goings on and how they can continue to engage with the
           University and its current students.
         </p>
         <div className="scrollable">
           <img src={cestrian} className="cestrian" alt="Cestrian newsletter" />
         </div>
-        <p>Cestrian Newsletter</p>
+        <h2>Cestrian Newsletter</h2>
       </div>
       <Footer />
     </div>

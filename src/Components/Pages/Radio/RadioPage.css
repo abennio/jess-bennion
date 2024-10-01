@@ -6,17 +6,58 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.split-radio-page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.description {
-    width: 40%;
+.radio-logo-colour {
+    width: 30%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.radio-description {
+    width: 60%;
     margin: 2rem;
 }
 
-.radio-image {
+.radio-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.radio-style-guide {
     width: 40%;
+}
+
+.radio-logo-colour-1 {
+    width: 20%;
+}
+
+.radio-logo-colour-outline {
+    width: 20%;
+}
+
+.radio-logo-bw {
+    width: 20%;
+}
+
+.media-style-guide {
+    width: 40%;
+}
+
+.media-logo-colour {
+    width: 20%;
+}
+
+.media-logo-colour-outline {
+    width: 20%;
+}
+
+.media-logo-bw {
+    width: 20%;
 }

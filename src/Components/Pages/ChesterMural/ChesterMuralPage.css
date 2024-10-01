@@ -12,6 +12,26 @@ p {
     width: 100%;
 } */
 
+.chester-mural-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+.chester-mural-description p {
+    width: 35%;
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 67rem;
+    background-color: white;
+    padding: 1rem;
+    padding-right: 0.5rem;
+    border: 0.1rem black solid;
+}
+
 .chester-mural-page {
     width: 100%;
 }
