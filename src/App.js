@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BirkenheadPage from "./Components/Pages/Birkenhead/BirkenheadPage";
 import ChesterMuralPage from "./Components/Pages/ChesterMural/ChesterMuralPage";
 import ChesterZooPage from "./Components/Pages/ChesterZoo/ChesterZooPage";
-import CoronavirusPage from "./Components/Pages/Coronavirus/CoronavirusPage";
+import RadioPage from "./Components/Pages/Radio/RadioPage";
 import CWACPage from "./Components/Pages/CWAC/CWACPage";
 import EmailsPage from "./Components/Pages/Emails/EmailsPage";
 import IconsPage from "./Components/Pages/Icons/IconsPage";
@@ -14,6 +14,9 @@ import StudentNewsPage from "./Components/Pages/StudentNews/StudentNewsPage";
 import UoCChristmasPage from "./Components/Pages/UoCChristmas/UoCChristmasPage";
 import UoCTimelinePage from "./Components/Pages/UoCTimeline/UoCTimelinePage";
 import WomenInTechPage from "./Components/Pages/WomenInTech/WomenInTechPage";
+import ClearingPage from "./Components/Pages/Clearing/ClearingPage.js";
+import StudentShoutOutPage from "./Components/Pages/StudentShoutOut/StudentShoutOutPage.js";
+import UoCRebrandPage from "./Components/Pages/UoCRebrand/UoCRebrandPage.js";
 import NoMatch from "./Components/Pages/NoMatch/NoMatch";
 import Contact from "./Components/Pages/Contact/contact.js";
 import Root from "./Components/Root";
@@ -26,7 +29,7 @@ export default function App() {
         <Route path="/birkenhead" element={<BirkenheadPage />} />
         <Route path="/chester-mural" element={<ChesterMuralPage />} />
         <Route path="/chester-zoo" element={<ChesterZooPage />} />
-        <Route path="/coronavirus" element={<CoronavirusPage />} />
+        <Route path="/radio" element={<RadioPage />} />
         <Route path="/cwac" element={<CWACPage />} />
         <Route path="/emails" element={<EmailsPage />} />
         <Route path="/icons" element={<IconsPage />} />
@@ -36,6 +39,9 @@ export default function App() {
         <Route path="/uoc-christmas" element={<UoCChristmasPage />} />
         <Route path="/uoc-timeline" element={<UoCTimelinePage />} />
         <Route path="/women-in-tech" element={<WomenInTechPage />} />
+        <Route path="/clearing" element={<ClearingPage />} />
+        <Route path="/student-shout-out" element={<StudentShoutOutPage />} />
+        <Route path="/uoc-rebrand" element={<UoCRebrandPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>

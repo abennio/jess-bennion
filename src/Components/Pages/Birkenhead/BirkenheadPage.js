@@ -9,8 +9,7 @@ function BirkenheadPage() {
   return (
     <div className="birkenhead-page">
       <NavBar />
-      <div className="split-page">
-        <div className="description">
+        <div className="birkenhead-description">
           <h1>Birkenhead Mural</h1>
           <br></br>
           <p>
@@ -19,8 +18,7 @@ function BirkenheadPage() {
             that showcased the attractions in Birkenhead.
           </p>
         </div>
-          <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
-      </div>
+        <img src={mural} className="birkenhead-mural" alt="Birkenhead Mural" />
       <Footer />
     </div>
   );

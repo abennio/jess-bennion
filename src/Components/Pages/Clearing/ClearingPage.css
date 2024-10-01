@@ -1,0 +1,22 @@
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.split-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description {
+    width: 40%;
+    margin: 2rem;
+}
+
+.radio-image {
+    width: 40%;
+}

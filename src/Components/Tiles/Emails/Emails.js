@@ -7,7 +7,7 @@ function Emails() {
     <div className="emails">
       <img
         src={student}
-        className="student-shout-out"
+        className="emails-image"
         alt="Logo of a megaphone and the words Student Shout Out in a speech bubble"
       />
       <div className="text-overlay">
