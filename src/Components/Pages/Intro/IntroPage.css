@@ -5,3 +5,14 @@ h1 {
 p {
     font-family: sans-serif;
 }
+
+.intro-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.intro-description {
+    padding: 2rem;
+}

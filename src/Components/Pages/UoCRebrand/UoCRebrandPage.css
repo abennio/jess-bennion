@@ -6,17 +6,44 @@ p {
     font-family: sans-serif;
 }
 
+h2 {
+    margin-left: 2rem;
+}
+
 .split-page {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.description {
+.uoc-rebrand-description {
     width: 40%;
     margin: 2rem;
 }
 
-.chesterLogo {
+.uoc-rebrand-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.chester-logo {
     width: 40%;
+}
+
+.campus-logo {
+    width:100%;
+}
+
+.logos {
+    width: 100%;
+}
+
+.department-logo {
+    width: 100%;
+}
+
+.uses {
+    width: 100%;
 }

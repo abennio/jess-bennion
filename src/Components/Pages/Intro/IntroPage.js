@@ -8,7 +8,7 @@ function IntroPage() {
   return (
     <div className="intro-page">
       <NavBar />
-      <div className="description">
+      <div className="intro-description">
         <h1>Introduction Videos</h1>
         <p>
           I was asked to animate some explainer videos aimed at new students.

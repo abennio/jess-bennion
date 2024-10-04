@@ -20,3 +20,10 @@ p {
     width: 40%;
     margin: 2rem;
 }
+
+.icons-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
