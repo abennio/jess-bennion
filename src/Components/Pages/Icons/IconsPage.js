@@ -7,7 +7,7 @@ import Footer from "../../Footer/footer";
 
 function IconsPage() {
   return (
-    <div className="birkenhead-page">
+    <div className="icons-page">
       <NavBar />
       <div className="split-page">
       <img src={icons} className="icons-image" alt="Icons" />

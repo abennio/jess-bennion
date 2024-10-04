@@ -6,6 +6,10 @@ p {
     font-family: sans-serif;
 }
 
+.emails-page {
+    margin-left: 2rem;
+}
+
 .scrollable {
     overflow: auto;
     height: 30em;
@@ -17,4 +21,44 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
+}
+
+.achieve {
+    display: flex;
+    flex-direction: row;
+}
+
+.achieve-text {
+    width: 40%;
+    padding: 1rem;
+}
+
+.shoutout {
+    display: flex;
+    flex-direction: row;
+}
+
+.shoutout-text {
+    width: 40%;
+    padding: 1rem;
+}
+
+.alumni {
+    display: flex;
+    flex-direction: row;
+}
+
+.alumni-text {
+    width: 40%;
+    padding: 1rem;
+}
+
+.cestrian {
+    display: flex;
+    flex-direction: row;
+}
+
+.cestrian-text {
+    width: 40%;
+    padding: 1rem;
 }

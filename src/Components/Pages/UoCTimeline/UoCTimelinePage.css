@@ -16,6 +16,13 @@ p {
     flex-wrap: wrap;
 }
 
+.timeline-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
 .timeline-description {
     width: 50%;
     margin: 2rem;

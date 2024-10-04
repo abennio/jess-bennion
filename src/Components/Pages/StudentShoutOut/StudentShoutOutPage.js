@@ -14,10 +14,7 @@ function StudentShoutOutPage() {
       <NavBar />
       <div className="split-page">
         <img src={logo} className="sso-logo" alt="Apply for Clearing" />
-        <img src={ScreenCapture} className="screen-capture" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
-        <img src={colours} className="logo" alt="Apply for Clearing" />
-        <img src={uses} className="logo" alt="Apply for Clearing" />
-        <div className="description">
+        <div className="sso-description">
           <h1>Clearing Campaign</h1>
           <br></br>
           <p>
@@ -25,7 +22,13 @@ function StudentShoutOutPage() {
             my favourite idea from my concepts.
           </p>
         </div>
-        
+        <div className="sso-images">
+          <div className="sso-scrollable">
+            <img src={ScreenCapture} className="sso-screen-capture" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
+          </div>
+          <img src={colours} className="sso-colour" alt="Apply for Clearing" />
+          <img src={uses} className="sso-uses" alt="Apply for Clearing" />
+        </div>
       </div>
       <Footer />
     </div>

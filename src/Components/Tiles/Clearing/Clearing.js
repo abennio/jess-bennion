@@ -7,7 +7,7 @@ function Clearing() {
     <div className="clearing">
       <img
         src={clearing}
-        className="clearing-image"
+        className="clearing-tile-image"
         alt="Two girls, one looking up and the other looking down with overlayed text that says 'Get World Ready'."
       />
       <div className="text-overlay">

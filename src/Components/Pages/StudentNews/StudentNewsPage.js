@@ -11,7 +11,7 @@ function StudentNewsPage() {
   return (
     <div className="student-news-page">
       <NavBar />
-      <div className="description">
+      <div className="student-news-description">
         <h1>Student News Website</h1>
         <p>
           I worked alongside a Web Developer to build Student News, a website to
@@ -21,6 +21,8 @@ function StudentNewsPage() {
         </p>
       </div>
       <div>
+      <div className="student-news-images">
+        <h2>Homepage</h2>
         <div className="scrollable-news">
           <img
             src={home}
@@ -28,7 +30,8 @@ function StudentNewsPage() {
             alt="Student News webpage design"
           />
         </div>
-        <p>Homepage</p>
+        <hr></hr>
+        <h2>Example of an article</h2>
         <div className="scrollable-news">
           <img
             src={image}
@@ -36,7 +39,8 @@ function StudentNewsPage() {
             alt="Student News article example"
           />
         </div>
-        <p>Example of an article</p>
+        <hr></hr>
+        <h2>Example of another article</h2>
         <div className="scrollable-news">
           <img
             src={article}
@@ -44,7 +48,7 @@ function StudentNewsPage() {
             alt="Student News article example"
           />
         </div>
-        <p>Example of an article</p>
+      </div>
       </div>
       <Footer />
     </div>

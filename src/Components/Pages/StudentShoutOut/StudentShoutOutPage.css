@@ -12,11 +12,39 @@ p {
     flex-wrap: wrap;
 }
 
-.description {
+.sso-description {
     width: 40%;
     margin: 2rem;
+    margin-top: 8rem;
 }
 
 .sso-logo {
     width: 40%;
+}
+
+.sso-description h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.sso-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sso-screen-capture {
+    overflow: auto;
+    width: 40%;
+    /* height: 30em; */
+}
+
+.sso-colour {
+    width: 100%;
+}
+
+.sso-uses {
+    width: 100%;
 }
