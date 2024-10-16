@@ -16,7 +16,6 @@ function NavBar() {
               className={({ isActive }) =>
                 isActive ? "active-work" : "inactive-work"
               }
-              exact
             >
               WORK
             </NavLink>
@@ -27,7 +26,6 @@ function NavBar() {
               className={({ isActive }) =>
                 isActive ? "active-contact" : "inactive-contact"
               }
-              exact
             >
               CONTACT
             </NavLink>
@@ -35,7 +33,7 @@ function NavBar() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <NavLink to="/jess-bennion" exact>
+              <NavLink to="/jess-bennion">
                 <img src={logo} className="logo" alt="logo" />
               </NavLink>
             </Navbar.Text>

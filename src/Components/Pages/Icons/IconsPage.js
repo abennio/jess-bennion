@@ -9,17 +9,17 @@ function IconsPage() {
   return (
     <div className="icons-page">
       <NavBar />
-      <div className="split-page">
-      <img src={icons} className="icons-image" alt="Icons" />
-      <div className="icons-description">
-        <h1>University of Chester Icons</h1>
-        <br></br>
-        <p>
-          These are icons that were used in the University of Chester’s
-          marketing materials, including the corporate website, prospectuses and
-          other printed materials.
-        </p>
-      </div>
+      <div className="icons-container">
+        <div className="icons-description">
+          <h1>University of <br></br> Chester Icons</h1>
+          <br></br>
+          <p>
+            These are icons that were used in the University of Chester’s
+            marketing materials, including the corporate website, prospectuses and
+            other printed materials.
+          </p>
+        </div>
+        <img src={icons} className="icons-image" alt="Icons" />
       </div>
       <Footer />
     </div>

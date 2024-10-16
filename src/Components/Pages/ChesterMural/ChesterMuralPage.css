@@ -6,30 +6,22 @@ p {
     font-family: sans-serif;
 }
 
-/* .horizontal-scroll-container {
-    overflow: auto;
-    height: 20em;
-    width: 100%;
-} */
+.chester-mural-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 0;
+  }
 
 .chester-mural-description h1 {
     font-family: "Bowlby One SC", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
-    position: absolute;
-    margin-top: -1rem;
-}
-
-.chester-mural-description p {
-    width: 35%;
-    position: absolute;
-    margin-top: -2rem;
-    margin-left: 67rem;
-    background-color: white;
-    padding: 1rem;
-    padding-right: 0.5rem;
-    border: 0.1rem black solid;
 }
 
 .chester-mural-page {
@@ -38,62 +30,55 @@ p {
 
 .chester-mural-description {
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .chester-mural-main-image {
     width: 100%;
 }
 
+.chester-mural-images {
+    text-align: center;
+}
+
 .bridgeStreet {
-    /* width: 30%; */
     height: 30em;
     margin: 1rem;
 }
 
 .storyhouse {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .chesterCross {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .townHall {
-    /* width: auto; */
-    height: 30em;
-    margin: 1rem;
-}
-
-.bandstand {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .ladyDiana {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .cathedral {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .queensParkBridge {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }
 
 .eastgateClock {
-    /* width: auto; */
     height: 30em;
     margin: 1rem;
 }

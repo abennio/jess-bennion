@@ -12,19 +12,20 @@ function ClearingPage() {
   return (
     <div className="clearing-page">
       <NavBar />
-      <div className="split-page">
-        <img src={clearing} className="clearing-image" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
+      <div className="clearing-container">
         <div className="clearing-page-description">
           <h1>Clearing Campaign</h1>
           <br></br>
           <p>
-            I was asked to design a logo for the University of Chester student radio station. This was
-            my favourite idea from my concepts.
+            The brief from the Marketing team at the University of Chester was to use `Get World Ready` 
+            as the slogan and keep it in-keeping with the University of Chester branding. My idea was to overlay
+            the text on images of students to demonstrate that the students are getting world ready by
+            studying at the University of Chester.
           </p>
         </div>
-        </div>
         <div className="clearing-image-flex">
-          <img src={clearingGif} className="clearing-gif-image" alt="" />
+          <img src={clearing} className="clearing-image" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
+          <img src={clearingGif} className="clearing-gif-image" alt="Video promoting University of Chester" />
           <video className="clearing-stories" width="750" height="500" controls >
             <source src={clearingStories} type="video/mp4"/>
           </video>
@@ -32,6 +33,7 @@ function ClearingPage() {
             <source src={clearingSquare} type="video/mp4"/>
           </video>
         </div>
+      </div>
       <Footer />
     </div>
   );

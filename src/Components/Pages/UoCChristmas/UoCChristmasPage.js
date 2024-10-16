@@ -8,12 +8,12 @@ function UoCChristmasPage() {
   return (
     <div className="christmas-card-page">
       <NavBar />
-      <div className="split-page">
+      <div className="christmas-card-container">
         <div className="christmas-card-description">
-          <h1>University of Chester E-Card</h1>
+          <h1>University of <br></br> Chester E-Card</h1>
           <p>
             The university design an e-card each year and this was the first year
-            an animated version was designed. The theme was deck the halls of
+            an animated version was designed. <br></br>The theme was deck the halls of
             residence, I drew a range of different accommodation in Illustrator
             and then animated it in After Effects.
           </p>

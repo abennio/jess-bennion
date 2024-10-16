@@ -7,13 +7,18 @@ p {
 }
 
 .timeline {
-    width: 45%;
+    width: 100%;
 }
 
-.split-page {
+.timeline-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .timeline-description h1 {
@@ -24,7 +29,6 @@ p {
 }
 
 .timeline-description {
-    width: 50%;
     margin: 2rem;
 }
 

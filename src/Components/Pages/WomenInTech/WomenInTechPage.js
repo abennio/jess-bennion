@@ -10,19 +10,7 @@ function WomenInTechPage() {
   return (
     <div className="women-in-tech-page">
       <NavBar />
-      <div className="split-page">
-        <div className="women-images">
-          <img
-            src={modern}
-            className="women-modern"
-            alt="Animation of someone coding on a modern interface"
-          />
-          <img
-            src={retro}
-            className="women-retro"
-            alt="Animation of someone coding on a retro interface"
-          />
-        </div>
+      <div className="women-in-tech-container">
         <div className="women-in-tech-description">
           <h1>Women in Tech</h1>
           <p>
@@ -32,6 +20,18 @@ function WomenInTechPage() {
             idea. The idea was to have an eye catching intro so people on
             Instagram would stop and watch the videos to follow in the carousel.
           </p>
+          <div className="women-images">
+            <img
+              src={modern}
+              className="women-modern"
+              alt="Animation of someone coding on a modern interface"
+            />
+            <img
+              src={retro}
+              className="women-retro"
+              alt="Animation of someone coding on a retro interface"
+            />
+          </div>
         </div>
       </div>
       <Footer />

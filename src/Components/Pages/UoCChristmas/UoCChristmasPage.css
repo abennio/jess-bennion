@@ -6,10 +6,23 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.christmas-card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.christmas-card-container iframe {
+    margin: 1rem;
+}
+
+.christmas-card-description {
+    padding: 2rem;
 }
 
 .christmas-card-description h1 {
@@ -17,12 +30,4 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
-}
-
-.christmas-card-description {
-    padding: 2rem;
-}
-
-iframe {
-    padding: 2rem;
 }
