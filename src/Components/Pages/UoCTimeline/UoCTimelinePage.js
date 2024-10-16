@@ -15,12 +15,7 @@ function UoCTimelinePage() {
   return (
     <div className="timeline-page">
       <NavBar />
-      <div className="split-page">
-        <img
-          src={mural}
-          className="timeline"
-          alt="The mural displayed on the Grosvenor building"
-        />
+      <div className="timeline-container">
         <div className="timeline-description">
           <h1>University of Chester Timeline</h1>
           <p>
@@ -32,6 +27,11 @@ function UoCTimelinePage() {
             that year. This was all designed in Adobe Illustrator.
           </p>
         </div>
+        <img
+          src={mural}
+          className="timeline"
+          alt="The mural displayed on the Grosvenor building"
+        />
         <img
           src={start}
           className="timeline-start"

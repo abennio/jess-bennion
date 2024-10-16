@@ -8,16 +8,7 @@ function CWACPage() {
   return (
     <div className="cwac-page">
       <NavBar />
-      <div className="split-page">
-          <iframe
-            width="660"
-            height="660"
-            src="https://www.youtube.com/embed/pkY6W6RMq3c"
-            title="Cheshire West and Chester Council Video 1"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+      <div className="cwac-container">
         <div className="cwac-description">
           <h1>Cheshire West and Cheshire</h1>
           <br></br>
@@ -30,28 +21,38 @@ function CWACPage() {
             accounts.
           </p>
         </div>
-      </div>
-      <br></br>
-      <div className="row-videos">
-          <iframe
-            width="560"
-            height="560"
-            src="https://www.youtube.com/embed/Tt5JGdae8IU"
-            title="Cheshire West and Chester Council Video 2"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <br></br>
-          <iframe
-            width="560"
-            height="560"
-            src="https://www.youtube.com/embed/9tcMjeTWIqI"
-            title="Cheshire West and Chester Council Video 3"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+        <br></br>
+        <div className="row-videos">
+            <iframe
+              width="560"
+              height="560"
+              src="https://www.youtube.com/embed/pkY6W6RMq3c"
+              title="Cheshire West and Chester Council Video 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="560"
+              height="560"
+              src="https://www.youtube.com/embed/Tt5JGdae8IU"
+              title="Cheshire West and Chester Council Video 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br></br>
+            <iframe
+              className="cwac-video-3"
+              width="560"
+              height="560"
+              src="https://www.youtube.com/embed/9tcMjeTWIqI"
+              title="Cheshire West and Chester Council Video 3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       <Footer />
     </div>

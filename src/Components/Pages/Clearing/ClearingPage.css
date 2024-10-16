@@ -6,10 +6,15 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.clearing-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .clearing-page-description {
@@ -25,7 +30,7 @@ p {
 
 .clearing-image {
     width: 20%;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .clearing-image-flex {
@@ -34,7 +39,7 @@ p {
 }
 
 .clearing-gif-image {
-    margin: 1rem;
+    margin-left: 1rem;
     height: 500px;
 }
 

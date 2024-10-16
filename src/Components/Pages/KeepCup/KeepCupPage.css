@@ -6,27 +6,32 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.keep-cup-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .cup-image {
-    width: 50%;
+    width: 80%;
 }
 
 .keep-cup {
-    width: 50%;
+    width: 80%;
 }
 
 .keep-cup-bw{
-    width: 50%;
+    width: 80%;
 }
 
 .keep-cup-description {
     margin: 2rem;
-    width: 30%;
+    width: 80%;
 }
 
 .keep-cup-description h1 {

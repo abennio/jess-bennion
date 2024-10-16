@@ -9,8 +9,20 @@ p {
 .scrollable-news {
     overflow: auto;
     height: 30em;
-    width: 60%;
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
+.student-news-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding: 0;
+  }
 
 .student-news-description h1 {
     font-family: "Bowlby One SC", sans-serif;
@@ -21,8 +33,13 @@ p {
 
 .student-news-description {
     padding: 2rem;
+    text-align: center;
 }
 
 .student-news-images {
     padding: 2rem;
+}
+
+.student-news-images h2 {
+    margin-bottom: 2rem;
 }

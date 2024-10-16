@@ -7,17 +7,21 @@ p {
 }
 
 .icons-image{
-    width: 50%;
+    width: 100%;
 }
 
-.split-page {
+.icons-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .icons-description {
-    width: 40%;
     margin: 2rem;
 }
 

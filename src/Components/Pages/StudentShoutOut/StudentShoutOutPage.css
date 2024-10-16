@@ -6,14 +6,18 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.sso-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .sso-description {
-    width: 40%;
     margin: 2rem;
     margin-top: 8rem;
 }
@@ -33,12 +37,13 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .sso-screen-capture {
     overflow: auto;
     width: 40%;
-    /* height: 30em; */
+    height: 30em;
 }
 
 .sso-colour {
