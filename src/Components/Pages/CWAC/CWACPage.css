@@ -6,14 +6,18 @@ p {
     font-family: sans-serif;
 }
 
-.split-page {
+.cwac-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    text-align: center;
 }
 
 .cwac-description {
-    width: 50%;
     margin: 2rem;
 }
 
@@ -26,6 +30,10 @@ p {
 
 iFrame {
     margin-left: 2em;
+}
+
+.cwac-video-3 {
+    margin-top: 2rem;
 }
 
 .row-videos {

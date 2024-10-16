@@ -14,8 +14,7 @@ function Footer() {
             <NavLink
               to="/jess-bennion"
               className="work"
-              activeClassName="active-work"
-              exact
+              // activeClassName="active-work"
             >
               Jess Bennion
             </NavLink>
@@ -23,7 +22,7 @@ function Footer() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <NavLink to="/" exact>
+              <NavLink to="/">
                 <img
                   src={instagram}
                   className="instagram"

@@ -6,20 +6,17 @@ p {
     font-family: sans-serif;
 }
 
-.split-radio-page {
+.radio-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-}
-
-.radio-logo-colour {
-    width: 30%;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .radio-description {
-    width: 60%;
     margin: 2rem;
 }
 
@@ -31,33 +28,11 @@ p {
 }
 
 .radio-style-guide {
-    width: 40%;
-}
-
-.radio-logo-colour-1 {
-    width: 20%;
-}
-
-.radio-logo-colour-outline {
-    width: 20%;
-}
-
-.radio-logo-bw {
-    width: 20%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .media-style-guide {
-    width: 40%;
-}
-
-.media-logo-colour {
-    width: 20%;
-}
-
-.media-logo-colour-outline {
-    width: 20%;
-}
-
-.media-logo-bw {
-    width: 20%;
+    width: 80%;
+    margin: 0 auto;
 }
