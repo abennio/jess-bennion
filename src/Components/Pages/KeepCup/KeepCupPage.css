@@ -8,7 +8,7 @@ p {
 
 .keep-cup-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -18,20 +18,20 @@ p {
 }
 
 .cup-image {
-    width: 80%;
+    width: 100%;
 }
 
 .keep-cup {
-    width: 80%;
+    width: 100%;
 }
 
 .keep-cup-bw{
-    width: 80%;
+    width: 100%;
 }
 
 .keep-cup-description {
     margin: 2rem;
-    width: 80%;
+    width: 100%;
 }
 
 .keep-cup-description h1 {
@@ -39,4 +39,120 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .keep-cup-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .keep-cup-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .aiken {
+        width: 100%;
+    }
+
+    .binks {
+        width: 100%;
+    }
+
+    .binksoutline {
+        width: 100%;
+    }
+
+    .broomhead {
+        width: 100%;
+    }
+
+    .broomheadoutline {
+        width: 100%;
+    }
+
+    .churchill {
+        width: 100%;
+    }
+
+    .churchilloutline {
+        width: 100%;
+    }
+
+    .csu {
+        width: 100%;
+    }
+
+    .kingsway {
+        width: 100%;
+    }
+
+    .kingswayoutline {
+        width: 100%;
+    }
+
+    .marriss {
+        width: 100%;
+    }
+
+    .marrissoutline {
+        width: 100%;
+    }
+
+    .molloy {
+        width: 100%;
+    }
+
+    .media {
+        width: 100%;
+    }
+
+    .mediaoutline {
+        width: 100%;
+    }
+
+    .porter {
+        width: 100%;
+    }
+
+    .riverside {
+        width: 100%;
+    }
+
+    .riversideoutline {
+        width: 100%;
+    }
+
+    .seaborne {
+        width: 100%;
+    }
+
+    .smallhall {
+        width: 100%;
+    }
+
+    .thornton {
+        width: 100%;
+    }
+
+    .thorntonoutline {
+        width: 100%;
+    }
+
+    .tower {
+        width: 100%;
+    }
+
+    .toweroutline {
+        width: 100%;
+    }
 }

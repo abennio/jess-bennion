@@ -1,11 +1,3 @@
-h1 {
-    font-family: sans-serif;
-}
-
-p {
-    font-family: sans-serif;
-}
-
 .emails-page {
     margin-left: 2rem;
 }
@@ -88,4 +80,107 @@ p {
 .cestrian-text {
     width: 50%;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .emails-page {
+        margin-left: 0rem;
+    }
+    
+    .scrollable {
+        overflow: auto;
+        height: 30em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .emails-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 0;
+      }
+    
+    .emails-description {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .emails-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+    
+    .achieve {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .achieve-text {
+        /* width: 80%;
+        padding: 0rem;
+        margin-left: 0rem; */
+        display: none;
+    }
+
+    .achieve-img {
+        width: 100%;
+    }
+    
+    .shoutout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .shoutout-text {
+        /* width: 50%;
+        padding: 1rem;
+        padding-left: 0rem; */
+        display: none;;
+    }
+    
+    .alumni {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .alumni-text {
+        /* width: 100%;
+        padding: 1rem;
+        margin-left: 2rem; */
+        display: none;
+    }
+    
+    .cestrian {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .cestrian-text {
+        /* width: 100%;
+        padding: 1rem; */
+        display: none;
+    }
 }

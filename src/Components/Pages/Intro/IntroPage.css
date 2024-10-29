@@ -28,3 +28,34 @@ p {
 .intro-description {
     padding: 2rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 0;
+    }
+
+    .intro-description {
+        padding: 1rem;
+    }
+    
+    .intro-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .intro-videos {
+        margin: 0.5rem;
+
+    }
+        
+}
