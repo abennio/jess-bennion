@@ -82,3 +82,107 @@ p {
     height: 30em;
     margin: 1rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .chester-mural-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding: 0;
+      }
+
+    .birkenhead-description {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .birkenhead-description p {
+        padding: 0;
+    }
+
+    .chester-mural-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .chester-mural-images {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bridgeStreet {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .storyhouse {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0; 
+        object-fit: cover;
+    }
+    
+    .chesterCross {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .townHall {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .ladyDiana {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .cathedral {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .queensParkBridge {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    
+    .eastgateClock {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+
+  }

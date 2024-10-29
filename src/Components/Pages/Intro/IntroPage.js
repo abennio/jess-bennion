@@ -16,7 +16,7 @@ function IntroPage() {
             These were all created in Illustrator and animated in After Effects.
           </p>
         </div>
-        <div>
+        <div className="intro-videos">
           <iframe
             width="560"
             height="315"

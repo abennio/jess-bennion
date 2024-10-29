@@ -20,6 +20,13 @@
     justify-content: center;
 }
 
+.zoo-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .zoo-image-container h2 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -32,13 +39,6 @@
     padding-right: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-}
-
-.zoo-image-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .zoo-three-image-container {
@@ -87,8 +87,120 @@
 .zoo-geofilter-and-desc {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .zoo-geofilter-and-desc h2 {
     padding: 1rem;
+    align-self: flex-start; /* Align heading to the left */
 }
+
+@media only screen and (max-width: 800px) {
+    .chester-zoo-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    
+    .chester-zoo-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+    
+    .chester-zoo-description p {
+        font-family: sans-serif;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .zoo-image-container h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .zoo-image-container p {
+        font-size: 1rem;
+        color: rgb(103, 101, 101);
+        width: 100%;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .zoo-image-container {
+        display: block;
+        flex-direction: initial;
+        flex-wrap: initial;
+    }
+    
+    .zoo-three-image-container {
+        display:block;
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    .chester-zoo-animation {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .zoo-animation-and-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zoo-animation-and-desc h2 {
+        align-self: flex-start;
+    }
+    
+    .chester-zoo-banner {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .zoo-banner-and-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zoo-banner-and-desc h2 {
+        align-self: flex-start;
+    }
+    
+    .chester-zoo-facebook {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .zoo-facebook-and-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zoo-facebook-and-desc h2 {
+        align-self: flex-start;
+    }
+    
+    .chester-zoo-geofilter {
+        width: 25rem;
+        padding: 1rem;
+    }
+    
+    .zoo-geofilter-and-desc {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .zoo-geofilter-and-desc h2 {
+        padding: 1rem;
+    }
+
+  }

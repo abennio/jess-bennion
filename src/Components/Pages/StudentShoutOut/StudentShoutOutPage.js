@@ -22,11 +22,11 @@ function StudentShoutOutPage() {
         </div>
         <div className="sso-images">
           <img src={logo} className="sso-logo" alt="Student Shout Out" />
-          <div className="scrollable">
-            <img src={ScreenCapture} className="sso-screen-capture" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
-          </div>
           <img src={colours} className="sso-colour" alt="Apply for Clearing" />
           <img src={uses} className="sso-uses" alt="Apply for Clearing" />
+          <div className="scrollable-sso">
+            <img src={ScreenCapture} className="sso-screen-capture" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
+          </div>
         </div>
       </div>
       <Footer />

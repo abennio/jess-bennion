@@ -38,12 +38,7 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.sso-screen-capture {
-    overflow: auto;
-    width: 40%;
-    height: 30em;
+    align-items: center;
 }
 
 .sso-colour {
@@ -52,4 +47,45 @@ p {
 
 .sso-uses {
     width: 100%;
+}
+
+.sso-screen-capture {
+    width: 100%;
+}
+
+.scrollable-sso {
+    overflow: auto;
+    width: 100%;
+    height: 30em;
+}
+
+@media only screen and (max-width: 800px) {
+    .sso-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .sso-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .sso-description {
+        margin: 2rem;
+        margin-top: 2rem;
+    }
+
+    .sso-screen-capture {
+        overflow: auto;
+        width: 100%;
+        height: auto;
+    }
 }
