@@ -24,6 +24,7 @@ function CWACPage() {
         <br></br>
         <div className="row-videos">
             <iframe
+              className="cwac-video-1"
               width="560"
               height="560"
               src="https://www.youtube.com/embed/pkY6W6RMq3c"
@@ -33,6 +34,7 @@ function CWACPage() {
               allowfullscreen
             ></iframe>
             <iframe
+              className="cwac-video-2"
               width="560"
               height="560"
               src="https://www.youtube.com/embed/Tt5JGdae8IU"

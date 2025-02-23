@@ -30,6 +30,7 @@ function StudentNewsPage() {
               alt="Student News webpage design"
             />
           </div>
+          <br />
           <hr></hr>
           <h2>Example of an article</h2>
           <div className="scrollable-news">
@@ -39,6 +40,7 @@ function StudentNewsPage() {
               alt="Student News article example"
             />
           </div>
+          <br />
           <hr></hr>
           <h2>Example of another article</h2>
           <div className="scrollable-news">

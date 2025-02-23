@@ -60,3 +60,36 @@ hr {
 .uses {
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .uoc-rebrand-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .uoc-rebrand-description {
+        margin: 1rem;
+    }
+    
+    .uoc-rebrand-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .uoc-rebrand-page h2 {
+        margin-left: 0rem;
+    }
+
+    .uoc-rebrand-titles {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
