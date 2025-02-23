@@ -8,7 +8,7 @@ import NavBar from "../../Navbar/navbar";
 import Footer from "../../Footer/footer";
 
 
-function ClearingPage() {
+export default function ClearingPage() {
   return (
     <div className="clearing-page">
       <NavBar />
@@ -38,5 +38,3 @@ function ClearingPage() {
     </div>
   );
 }
-
-export default ClearingPage;

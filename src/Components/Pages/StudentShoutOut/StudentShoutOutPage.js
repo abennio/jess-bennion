@@ -25,6 +25,7 @@ function StudentShoutOutPage() {
           <img src={colours} className="sso-colour" alt="Apply for Clearing" />
           <img src={uses} className="sso-uses" alt="Apply for Clearing" />
           <div className="scrollable-sso">
+            <p>To see more of the webpage, hover over the below image and scroll:</p>
             <img src={ScreenCapture} className="sso-screen-capture" alt="Portrait of two women with text over the top of it saying 'Get World Ready'." />
           </div>
         </div>
