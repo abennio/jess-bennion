@@ -1,8 +1,12 @@
-.uoc-rebrand {
+p {
+    font-size: 1.5rem;;
+}
+
+.tile {
     position: relative;
   }
   
-  .uoc-rebrand.active {
+  .tile.active {
     width: auto;
   }
   
@@ -22,7 +26,7 @@
     opacity: 0.8;
   }
   
-  .uoc-rebrand-logo {
+  .birkenhead-pigeon {
     width: 100%;
   }
   
@@ -40,7 +44,7 @@
   }
   
   @media screen and (max-width: 800px) {
-    .uoc-rebrand {
+    .tile {
       position: relative;
       width: 100%;
     }
@@ -62,7 +66,7 @@
       opacity: 0.5;
     }
     
-    .uoc-rebrand-logo {
+    .birkenhead-pigeon {
       width: 100%;
     }
     
