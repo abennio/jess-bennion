@@ -83,7 +83,7 @@ p {
     margin: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
     .chester-mural-container {
         display: flex;
         flex-direction: row;

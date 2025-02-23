@@ -103,3 +103,53 @@ p {
         margin-top: 1rem;
     }
 }
+
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+    .clearing-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .clearing-page-description {
+        margin: 1rem;
+    }
+    
+    .clearing-page-description h1 {
+        font-family: "Bowlby One SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+    }
+
+    .clearing-image-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clearing-image {
+        width: 100%;
+        /* margin: 1rem; */
+    }
+
+    .clearing-gif-image {
+        display: none;
+    }
+    
+    .clearing-stories {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+    
+    .clearing-square {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+}

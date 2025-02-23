@@ -95,7 +95,7 @@
     align-self: flex-start; /* Align heading to the left */
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1500px) {
     .chester-zoo-description {
         display: flex;
         flex-direction: column;
