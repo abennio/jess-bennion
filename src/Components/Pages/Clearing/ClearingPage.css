@@ -30,13 +30,13 @@ p {
 
 .clearing-image {
     width: 20%;
-    /* margin: 1rem; */
+    margin: 1rem;
 }
 
 .clearing-image-flex {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .clearing-gif-image {
@@ -50,11 +50,11 @@ p {
 }
 
 .clearing-square {
-    width: 40%;
+    /* width: 40%; */
     margin: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .clearing-container {
         display: flex;
         flex-direction: column;
@@ -84,7 +84,7 @@ p {
 
     .clearing-image {
         width: 100%;
-        /* margin: 1rem; */
+        margin: 0rem;
     }
 
     .clearing-gif-image {
@@ -104,7 +104,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1400px) and (min-width: 800px) {
+@media only screen and (max-width: 1384px) and (min-width: 600px) {
     .clearing-container {
         display: flex;
         flex-direction: column;
@@ -128,13 +128,13 @@ p {
     }
 
     .clearing-image-flex {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        /* flex-direction: column; */
     }
 
     .clearing-image {
-        width: 100%;
-        /* margin: 1rem; */
+        width: 40%;
+        margin: 1rem;
     }
 
     .clearing-gif-image {
