@@ -22,7 +22,7 @@ function Footer() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <NavLink to="/">
+              <NavLink to="https://www.instagram.com/jessb.draws?igsh=MTdleWZ1cGliZmw5OQ==">
                 <img
                   src={instagram}
                   className="instagram"
