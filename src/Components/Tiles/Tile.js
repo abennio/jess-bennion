@@ -5,7 +5,7 @@ import "./Tile.css";
 function Tile(prop) {
   return (
     <div className="tile">
-      <img src={prop.image} className="birkenhead-pigeon" alt={prop.alt} />
+      <img src={prop.image} className="tile-image" alt={prop.alt} />
       <div className="text-overlay">
         <div className="text">
           <h1>{prop.title}</h1>
@@ -17,7 +17,7 @@ function Tile(prop) {
 }
 
 Tile.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
