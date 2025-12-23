@@ -1,13 +1,10 @@
 import React from "react";
 import "./IntroPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function IntroPage() {
   return (
     <div className="intro-page">
-      <NavBar />
       <div className="intro-container">
         <div className="intro-description">
           <h1>Introduction Videos</h1>
@@ -46,7 +43,6 @@ function IntroPage() {
           ></iframe>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

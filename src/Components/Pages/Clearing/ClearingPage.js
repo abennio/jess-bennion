@@ -4,14 +4,11 @@ import clearingGif from "../../../portfolio-images/Clearing/Clearing-ads-gif-300
 import clearingStories from "../../../portfolio-images/Clearing/Clearing - Stories_15 Seconds.mp4";
 import clearingSquare from "../../../portfolio-images/Clearing/Clearing Ad Example_Square.mp4";
 import "./ClearingPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 export default function ClearingPage() {
   return (
     <div className="clearing-page">
-      <NavBar />
       <div className="clearing-container">
         <div className="clearing-page-description">
           <h1>Clearing Campaign</h1>
@@ -34,7 +31,6 @@ export default function ClearingPage() {
           </video>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

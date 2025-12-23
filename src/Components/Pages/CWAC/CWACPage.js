@@ -1,13 +1,10 @@
 import React from "react";
 import "./CWACPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function CWACPage() {
   return (
     <div className="cwac-page">
-      <NavBar />
       <div className="cwac-container">
         <div className="cwac-description">
           <h1>Cheshire West and Cheshire</h1>
@@ -56,7 +53,6 @@ function CWACPage() {
             ></iframe>
           </div>
         </div>
-      <Footer />
     </div>
   );
 }

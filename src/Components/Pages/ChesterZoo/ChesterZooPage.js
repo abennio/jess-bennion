@@ -4,15 +4,12 @@ import facebook from "../../../portfolio-images/ChesterZoo/Chester+Zoo+FB+Advert
 import geofilter from "../../../portfolio-images/ChesterZoo/Geofilter-01.png";
 import banner from "../../../portfolio-images/ChesterZoo/Web+banner.jpeg";
 import "./ChesterZooPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function ChesterZooPage() {
   return (
     <>
       <div className="chester-zoo-page">
-        <NavBar />
         <div className="chester-zoo-description">
           <h1>Chester Zoo</h1>
           <br></br>
@@ -75,7 +72,6 @@ function ChesterZooPage() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

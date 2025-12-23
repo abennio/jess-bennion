@@ -26,14 +26,11 @@ import thorntonoutline from "../../../portfolio-images/KeepCup/UoC_Thornton+Outl
 import tower from "../../../portfolio-images/KeepCup/UoC_Tower.png";
 import toweroutline from "../../../portfolio-images/KeepCup/UoC_Tower+Outline.png";
 import "./KeepCupPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function KeepCupPage() {
   return (
     <div className="keep-cup-page">
-      <NavBar />
       <div className="keep-cup-container">
         <div className="keep-cup-description">
           <h1>Keep Cup Design</h1>
@@ -177,7 +174,7 @@ function KeepCupPage() {
           />
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }

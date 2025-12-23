@@ -4,14 +4,11 @@ import alumni from "../../../portfolio-images/Emails/cutdown-images/Alumni.png";
 import shoutout from "../../../portfolio-images/Emails/cutdown-images/student-shout-out.png";
 import cestrian from "../../../portfolio-images/Emails/cutdown-images/the-cestrian.png";
 import "./EmailsPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function EmailsPage() {
   return (
     <div className="emails-page">
-      <NavBar />
       <div className="emails-container">
         <div className="emails-description">
           <h1>Emails</h1>
@@ -83,7 +80,6 @@ function EmailsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

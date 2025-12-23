@@ -4,14 +4,11 @@ import departmentLogos from "../../../portfolio-images/UoCRebrand/department-log
 import logos from "../../../portfolio-images/UoCRebrand/logos.png";
 import uses from "../../../portfolio-images/UoCRebrand/ID Work Template5.jpg";
 import "./UoCRebrandPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function UoCRebrandPage() {
   return (
     <div className="uoc-rebrand-page">
-      <NavBar />
       <div className="uoc-rebrand-container">
         <div className="uoc-rebrand-description">
           <h1>University of Chester Rebrand</h1>
@@ -33,7 +30,6 @@ function UoCRebrandPage() {
         <h2 className="uoc-rebrand-titles">Examples of how the branding can be used</h2>
         <img src={uses} className="uses" alt="Apply for Clearing" />
       </div>
-      <Footer />
     </div>
   );
 }

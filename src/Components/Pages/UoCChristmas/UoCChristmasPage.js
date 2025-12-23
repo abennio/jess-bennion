@@ -1,13 +1,10 @@
 import React from "react";
 import "./UoCChristmasPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function UoCChristmasPage() {
   return (
     <div className="christmas-card-page">
-      <NavBar />
       <div className="christmas-card-container">
         <div className="christmas-card-description">
           <h1>University of <br></br> Chester E-Card</h1>
@@ -28,7 +25,6 @@ function UoCChristmasPage() {
             allowfullscreen
           ></iframe>
       </div>
-      <Footer />
     </div>
   );
 }

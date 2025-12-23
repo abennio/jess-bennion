@@ -9,14 +9,11 @@ import cathedral from "../../../portfolio-images/ChesterMural/chester-mural-webs
 import queensParkBridge from "../../../portfolio-images/ChesterMural/chester-mural-website-08.png";
 import eastgateClock from "../../../portfolio-images/ChesterMural/chester-mural-website-09.png";
 import "./ChesterMuralPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function ChesterMuralPage() {
   return (
     <div className="chester-mural-page">
-      <NavBar />
       <div className="chester-mural-container">
         <div className="chester-mural-description">
           <h1>Chester Mural</h1>
@@ -41,7 +38,6 @@ function ChesterMuralPage() {
           <img src={eastgateClock} className="eastgateClock" alt="Chester Mural" />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

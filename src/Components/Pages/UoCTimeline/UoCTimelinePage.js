@@ -5,16 +5,11 @@ import middle1 from "../../../portfolio-images/UoCTimeline/1921-1976.png";
 import middle2 from "../../../portfolio-images/UoCTimeline/1989-2009.png";
 import end from "../../../portfolio-images/UoCTimeline/2013-end.png";
 import honoraries from "../../../portfolio-images/UoCTimeline/honoraries-alumni.png";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
-
-
 import "./UoCTimelinePage.css";
 
 function UoCTimelinePage() {
   return (
     <div className="timeline-page">
-      <NavBar />
       <div className="timeline-container">
         <div className="timeline-description">
           <h1>University of Chester Timeline</h1>
@@ -58,7 +53,6 @@ function UoCTimelinePage() {
           alt="The final section of the mural"
         />
       </div>
-      <Footer />
     </div>
   );
 }

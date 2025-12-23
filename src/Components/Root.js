@@ -1,7 +1,5 @@
 import React from "react";
 import "./Root.css";
-import NavBar from "../Components/Navbar/navbar.js";
-import Footer from "../Components/Footer/footer";
 import { Outlet, Link } from "react-router-dom";
 import Tile from "./Tiles/Tile.js";
 
@@ -28,7 +26,6 @@ export default function Root() {
   return (
     <>
       <div className="root">
-        <NavBar />
         <div className="page-container">
           <div className="link-image">
             <Link to="/birkenhead">
@@ -175,7 +172,6 @@ export default function Root() {
             </Link>
           </div>
         </div>
-        <Footer />
       </div>
       
       <Outlet />

@@ -2,14 +2,11 @@ import React from "react";
 import modern from "../../../portfolio-images/WomenInTech/Women+in+Tech+-+Modern.gif";
 import retro from "../../../portfolio-images/WomenInTech/Women+in+Tech+Retro.gif";
 import "./WomenInTechPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function WomenInTechPage() {
   return (
     <div className="women-in-tech-page">
-      <NavBar />
       <div className="women-in-tech-container">
         <div className="women-in-tech-description">
           <h1>Women in Tech</h1>
@@ -34,7 +31,6 @@ function WomenInTechPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

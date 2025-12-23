@@ -4,14 +4,11 @@ import logo from "../../../portfolio-images/StudentShoutOut/SSO-01.png";
 import colours from "../../../portfolio-images/StudentShoutOut/SSO-02.png";
 import uses from "../../../portfolio-images/StudentShoutOut/SSO-03.png";
 import "./StudentShoutOutPage.css";
-import NavBar from "../../Navbar/navbar";
-import Footer from "../../Footer/footer";
 
 
 function StudentShoutOutPage() {
   return (
     <div className="student-shout-out-page">
-      <NavBar />
       <div className="sso-container">
         <div className="sso-description">
           <h1>Student Shout Out</h1>
@@ -30,7 +27,6 @@ function StudentShoutOutPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

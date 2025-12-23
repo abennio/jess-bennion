@@ -1,6 +1,6 @@
 import * as React from "react";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout/Layout";
 import BirkenheadPage from "./Components/Pages/Birkenhead/BirkenheadPage";
 import ChesterMuralPage from "./Components/Pages/ChesterMural/ChesterMuralPage";
 import ChesterZooPage from "./Components/Pages/ChesterZoo/ChesterZooPage";
@@ -24,30 +24,29 @@ import Root from "./Components/Root";
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/jess-bennion" element={<Root />} />
-        <Route path="/birkenhead" element={<BirkenheadPage />} />
-        <Route path="/chester-mural" element={<ChesterMuralPage />} />
-        <Route path="/chester-zoo" element={<ChesterZooPage />} />
-        <Route path="/radio" element={<RadioPage />} />
-        <Route path="/cwac" element={<CWACPage />} />
-        <Route path="/emails" element={<EmailsPage />} />
-        <Route path="/icons" element={<IconsPage />} />
-        <Route path="/intro" element={<IntroPage />} />
-        <Route path="/keep-cup" element={<KeepCupPage />} />
-        <Route path="/student-news" element={<StudentNewsPage />} />
-        <Route path="/uoc-christmas" element={<UoCChristmasPage />} />
-        <Route path="/uoc-timeline" element={<UoCTimelinePage />} />
-        <Route path="/women-in-tech" element={<WomenInTechPage />} />
-        <Route path="/clearing" element={<ClearingPage />} />
-        <Route path="/student-shout-out" element={<StudentShoutOutPage />} />
-        <Route path="/uoc-rebrand" element={<UoCRebrandPage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/jess-bennion" element={<Root />} />
+          <Route path="/birkenhead" element={<BirkenheadPage />} />
+          <Route path="/chester-mural" element={<ChesterMuralPage />} />
+          <Route path="/chester-zoo" element={<ChesterZooPage />} />
+          <Route path="/radio" element={<RadioPage />} />
+          <Route path="/cwac" element={<CWACPage />} />
+          <Route path="/emails" element={<EmailsPage />} />
+          <Route path="/icons" element={<IconsPage />} />
+          <Route path="/intro" element={<IntroPage />} />
+          <Route path="/keep-cup" element={<KeepCupPage />} />
+          <Route path="/student-news" element={<StudentNewsPage />} />
+          <Route path="/uoc-christmas" element={<UoCChristmasPage />} />
+          <Route path="/uoc-timeline" element={<UoCTimelinePage />} />
+          <Route path="/women-in-tech" element={<WomenInTechPage />} />
+          <Route path="/clearing" element={<ClearingPage />} />
+          <Route path="/student-shout-out" element={<StudentShoutOutPage />} />
+          <Route path="/uoc-rebrand" element={<UoCRebrandPage />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
