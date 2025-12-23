@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./Tile.css";
 
-export default function Tile(prop) {
+function Tile(prop) {
   return (
     <div className="tile">
       <img src={prop.image} className="birkenhead-pigeon" alt={prop.alt} />
@@ -14,3 +15,11 @@ export default function Tile(prop) {
     </div>
   );
 }
+
+Tile.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default React.memo(Tile);

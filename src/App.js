@@ -1,31 +1,34 @@
 import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
-import BirkenheadPage from "./Components/Pages/Birkenhead/BirkenheadPage";
-import ChesterMuralPage from "./Components/Pages/ChesterMural/ChesterMuralPage";
-import ChesterZooPage from "./Components/Pages/ChesterZoo/ChesterZooPage";
-import RadioPage from "./Components/Pages/Radio/RadioPage";
-import CWACPage from "./Components/Pages/CWAC/CWACPage";
-import EmailsPage from "./Components/Pages/Emails/EmailsPage";
-import IconsPage from "./Components/Pages/Icons/IconsPage";
-import IntroPage from "./Components/Pages/Intro/IntroPage";
-import KeepCupPage from "./Components/Pages/KeepCup/KeepCupPage";
-import StudentNewsPage from "./Components/Pages/StudentNews/StudentNewsPage";
-import UoCChristmasPage from "./Components/Pages/UoCChristmas/UoCChristmasPage";
-import UoCTimelinePage from "./Components/Pages/UoCTimeline/UoCTimelinePage";
-import WomenInTechPage from "./Components/Pages/WomenInTech/WomenInTechPage";
-import ClearingPage from "./Components/Pages/Clearing/ClearingPage.js";
-import StudentShoutOutPage from "./Components/Pages/StudentShoutOut/StudentShoutOutPage.js";
-import UoCRebrandPage from "./Components/Pages/UoCRebrand/UoCRebrandPage.js";
-import NoMatch from "./Components/Pages/NoMatch/NoMatch";
-import Contact from "./Components/Pages/Contact/contact.js";
 import Root from "./Components/Root";
+
+// Lazy load all page components for better performance
+const BirkenheadPage = React.lazy(() => import("./Components/Pages/Birkenhead/BirkenheadPage"));
+const ChesterMuralPage = React.lazy(() => import("./Components/Pages/ChesterMural/ChesterMuralPage"));
+const ChesterZooPage = React.lazy(() => import("./Components/Pages/ChesterZoo/ChesterZooPage"));
+const RadioPage = React.lazy(() => import("./Components/Pages/Radio/RadioPage"));
+const CWACPage = React.lazy(() => import("./Components/Pages/CWAC/CWACPage"));
+const EmailsPage = React.lazy(() => import("./Components/Pages/Emails/EmailsPage"));
+const IconsPage = React.lazy(() => import("./Components/Pages/Icons/IconsPage"));
+const IntroPage = React.lazy(() => import("./Components/Pages/Intro/IntroPage"));
+const KeepCupPage = React.lazy(() => import("./Components/Pages/KeepCup/KeepCupPage"));
+const StudentNewsPage = React.lazy(() => import("./Components/Pages/StudentNews/StudentNewsPage"));
+const UoCChristmasPage = React.lazy(() => import("./Components/Pages/UoCChristmas/UoCChristmasPage"));
+const UoCTimelinePage = React.lazy(() => import("./Components/Pages/UoCTimeline/UoCTimelinePage"));
+const WomenInTechPage = React.lazy(() => import("./Components/Pages/WomenInTech/WomenInTechPage"));
+const ClearingPage = React.lazy(() => import("./Components/Pages/Clearing/ClearingPage.js"));
+const StudentShoutOutPage = React.lazy(() => import("./Components/Pages/StudentShoutOut/StudentShoutOutPage.js"));
+const UoCRebrandPage = React.lazy(() => import("./Components/Pages/UoCRebrand/UoCRebrandPage.js"));
+const NoMatch = React.lazy(() => import("./Components/Pages/NoMatch/NoMatch"));
+const Contact = React.lazy(() => import("./Components/Pages/Contact/contact.js"));
 
 export default function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Routes>
+        <React.Suspense fallback={<div className="loading">Loading...</div>}>
+          <Routes>
           <Route path="/jess-bennion" element={<Root />} />
           <Route path="/birkenhead" element={<BirkenheadPage />} />
           <Route path="/chester-mural" element={<ChesterMuralPage />} />
@@ -46,6 +49,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
+        </React.Suspense>
       </Layout>
     </BrowserRouter>
   );

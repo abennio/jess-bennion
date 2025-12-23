@@ -1,9 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./contact.css";
 
 function Contact() {
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact - Jess Bennion</title>
+        <meta name="description" content="Get in touch with Jess Bennion, Digital Designer from Chester, UK for design projects and collaborations." />
+      </Helmet>
       <div className="contact-description">
           <h1>Hello</h1>
           <p>

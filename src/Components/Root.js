@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import "./Root.css";
 import { Outlet, Link } from "react-router-dom";
 import Tile from "./Tiles/Tile.js";
@@ -25,6 +26,11 @@ import building from "../portfolio-images/ChesterMural/Chester-Mural.png";
 export default function Root() {
   return (
     <>
+      <Helmet>
+        <title>Jess Bennion - Digital Designer Portfolio</title>
+        <meta name="description" content="Portfolio of Jess Bennion, a Digital Designer from Chester, UK. Showcasing design work for print, digital, illustration, and video." />
+        <meta name="keywords" content="digital design, graphic design, illustration, Chester, portfolio" />
+      </Helmet>
       <div className="root">
         <div className="page-container">
           <div className="link-image">
