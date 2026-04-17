@@ -8,8 +8,8 @@ function Tile(prop) {
       <img src={prop.image} className="tile-image" alt={prop.alt} />
       <div className="text-overlay">
         <div className="text">
-          <h1>{prop.title}</h1>
-          <p>- view -</p>
+          <h2>{prop.title}</h2>
+          <span className="tile-link">View project</span>
         </div>
       </div>
     </div>

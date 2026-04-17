@@ -1,9 +1,8 @@
-p {
-    font-size: 1.5rem;;
-}
-
 .tile {
     position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #ffffff;
   }
   
   .tile.active {
@@ -16,31 +15,72 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    align-items: flex-end;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #000;
+    transition: opacity 220ms ease, transform 220ms ease;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.26) 0%,
+      rgba(255, 255, 255, 0.58) 46%,
+      rgba(255, 255, 255, 0.92) 100%
+    );
     font-family: 'Rubik', sans-serif;
+    border-radius: 24px;
   }
   
-  .text-overlay:hover {
-    opacity: 0.8;
+  .tile:hover .text-overlay {
+    opacity: 1;
   }
   
   .tile-image {
     width: 100%;
+    display: block;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 320ms ease-out;
+  }
+
+  .tile:hover .tile-image {
+    transform: scale(1.04);
   }
   
   .text {
-    color: white;
+    color: #3f3a4d;
+    width: 100%;
+    padding: 1.1rem 1.15rem 1.2rem;
+    transform: translateY(16px);
+    opacity: 0;
+    transition: transform 220ms ease, opacity 220ms ease;
+    text-align: left;
+  }
+
+  .tile:hover .text {
+    transform: translateY(0);
     opacity: 1;
-    font-size: 0.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  }
+
+  .text h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #2d2838;
+  }
+
+  .tile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.65rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3a3447;
+  }
+
+  .tile-link::after {
+    content: "↗";
+    font-size: 0.9rem;
   }
   
   @media screen and (max-width: 800px) {
@@ -58,12 +98,6 @@ p {
       height: 100%;
       width: 100%;
       opacity: 0;
-      transition: .5s ease;
-      background-color: #000;
-    }
-    
-    .text-overlay:hover {
-      opacity: 0.5;
     }
     
     .tile-image {
@@ -71,15 +105,17 @@ p {
     }
     
     .text {
-      color: white;
-      font-size: 1rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
+      padding: 1rem;
+      transform: translateY(12px);
+      opacity: 0;
+    }
+
+    .text h2 {
+      font-size: 1.05rem;
+    }
+
+    .tile-link {
+      margin-top: 0.45rem;
+      font-size: 0.8rem;
     }
   }
-  

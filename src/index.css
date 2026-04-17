@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.home-lock-scroll {
+  overflow: hidden;
+}
+
 .loading {
   display: flex;
   justify-content: center;
