@@ -12,3 +12,15 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+@media screen and (max-width: 900px) {
+  .layout-shell {
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .layout-content {
+    overflow: visible;
+  }
+}
