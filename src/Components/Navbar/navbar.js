@@ -5,6 +5,19 @@ import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
+const RETURNING_FROM_PROJECT_STORAGE_KEY =
+  "jess-bennion-returning-from-project";
+const PROJECT_RETURN_PENDING_CLASS = "project-return-pending";
+
+function clearPendingProjectReturn() {
+  try {
+    window.sessionStorage.removeItem(RETURNING_FROM_PROJECT_STORAGE_KEY);
+    document.documentElement.classList.remove(PROJECT_RETURN_PENDING_CLASS);
+  } catch {
+    // Ignore storage failures; navigation should still work normally.
+  }
+}
+
 function NavBar() {
   return (
     <div>
@@ -13,6 +26,8 @@ function NavBar() {
           <Navbar.Brand>
             <NavLink
               to="/jess-bennion"
+              reloadDocument
+              onClick={clearPendingProjectReturn}
               className={({ isActive }) =>
                 isActive ? "active-work" : "inactive-work"
               }
@@ -33,7 +48,11 @@ function NavBar() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              <NavLink to="/jess-bennion">
+              <NavLink
+                to="/jess-bennion"
+                reloadDocument
+                onClick={clearPendingProjectReturn}
+              >
                 <img src={logo} className="logo" alt="logo" />
               </NavLink>
             </Navbar.Text>

@@ -5,6 +5,14 @@
   overflow: hidden;
 }
 
+.root--reloading {
+  visibility: hidden;
+}
+
+.project-return-pending .root {
+  visibility: hidden;
+}
+
 .page-container {
   position: relative;
   display: grid;

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./Root.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigationType } from "react-router-dom";
 import Tile from "./Tiles/Tile.js";
 
 // Importing images
@@ -33,6 +33,9 @@ const FEATURED_TILE_INDEX = 3;
 const COLUMN_MOTION_DELAY = 220;
 const FEATURED_TRACK_CENTER_RATIO = 0.5;
 const FEATURED_HERO_VERTICAL_OFFSET = -5;
+const RETURNING_FROM_PROJECT_STORAGE_KEY =
+  "jess-bennion-returning-from-project";
+const PROJECT_RETURN_PENDING_CLASS = "project-return-pending";
 // Replace with an imported MP4 when the final hero video is ready.
 const FEATURED_VIDEO_SRC = motionReel;
 
@@ -152,6 +155,35 @@ function clamp(value, minimum, maximum) {
 function smoothstep(value) {
   const clampedValue = clamp(value, 0, 1);
   return clampedValue * clampedValue * (3 - 2 * clampedValue);
+}
+
+function hasPendingProjectReturn() {
+  try {
+    return (
+      typeof window !== "undefined" &&
+      window.sessionStorage.getItem(RETURNING_FROM_PROJECT_STORAGE_KEY) ===
+        "true"
+    );
+  } catch {
+    return false;
+  }
+}
+
+function markProjectNavigation() {
+  try {
+    window.sessionStorage.setItem(RETURNING_FROM_PROJECT_STORAGE_KEY, "true");
+    document.documentElement.classList.add(PROJECT_RETURN_PENDING_CLASS);
+  } catch {
+    // Ignore storage failures; navigation should still work normally.
+  }
+}
+
+function clearPendingProjectReturn() {
+  try {
+    window.sessionStorage.removeItem(RETURNING_FROM_PROJECT_STORAGE_KEY);
+  } catch {
+    // Ignore storage failures; navigation should still work normally.
+  }
 }
 
 function getColumnOffset(index, currentScrollOffset, columnHeight) {
@@ -339,7 +371,7 @@ function FeaturedVideoCard({
 function renderStandardProjectTile(project, extraClassName = "") {
   return (
     <div className={`link-image${extraClassName ? ` ${extraClassName}` : ""}`} key={project.path}>
-      <Link to={project.path}>
+      <Link to={project.path} onClick={markProjectNavigation}>
         <Tile image={project.image} alt={project.alt} title={project.title} />
       </Link>
     </div>
@@ -347,6 +379,9 @@ function renderStandardProjectTile(project, extraClassName = "") {
 }
 
 export default function Root() {
+  const navigationType = useNavigationType();
+  const shouldReloadProjectReturn =
+    navigationType === "POP" && hasPendingProjectReturn();
   const viewportRef = useRef(null);
   const columnSetRefs = useRef([]);
   const featuredColumnRef = useRef(null);
@@ -383,6 +418,16 @@ export default function Root() {
   const gridRevealProgress = smoothstep((featuredProgress - 0.18) / 0.74);
   const gridBlurAmount = (1 - gridRevealProgress) * 12;
   const gridOverlayOpacity = (1 - gridRevealProgress) * 0.22;
+
+  useEffect(() => {
+    if (!shouldReloadProjectReturn) {
+      return;
+    }
+
+    clearPendingProjectReturn();
+    document.documentElement.classList.add(PROJECT_RETURN_PENDING_CLASS);
+    window.location.reload();
+  }, [shouldReloadProjectReturn]);
 
   useEffect(() => {
     const updateMeasurements = () => {
@@ -741,15 +786,15 @@ export default function Root() {
           content="digital design, graphic design, illustration, Chester, portfolio"
         />
       </Helmet>
-      <div className="root">
+      <div className={`root${shouldReloadProjectReturn ? " root--reloading" : ""}`}>
         <div
           className="page-container"
           onWheel={handleWheel}
           ref={viewportRef}
         >
           {isCompactView ? (
-            <div className="compact-home-stack">
-              {projectColumns.flat().map((project) =>
+            <div className="compact-home-stack" data-testid="compact-home-stack">
+              {[FEATURED_PROJECT, ...projects].map((project) =>
                 project.isFeatured ? (
                   <div className="featured-slot featured-slot--mobile" key={project.id}>
                     <FeaturedVideoCard
