@@ -1,7 +1,7 @@
 # Copilot Instructions for Jess Bennion Portfolio
 
 ## Project Overview
-React portfolio website for design work, deployed to GitHub Pages at `http://abennio.github.io/jess-bennion`. Built with Create React App (CRA) using React Router v6 for client-side routing.
+React portfolio website for design work, deployed to GitHub Pages at `http://abennio.github.io/jess-bennion`. Built with Vite using React Router v6 for client-side routing.
 
 ## Architecture & Routing
 
@@ -57,9 +57,11 @@ React portfolio website for design work, deployed to GitHub Pages at `http://abe
 
 ## Development Workflow
 
-**Start dev server**: `npm start` (opens `localhost:3000`)
-**Build for production**: `npm run build` (outputs to `build/`)
-**Deploy**: Builds to `build/` directory, configured for GitHub Pages via `homepage` in package.json
+**Start dev server**: `npm start` (serves `localhost:3100`)
+**Build for production**: `npm run build` (outputs to `dist/`)
+**Preview production build**: `npm run preview` (serves `localhost:4173`)
+**Test**: `npm test`
+**Deploy**: Builds to `dist/` directory. Vite's `base` is set to `/jess-bennion/` in `vite.config.js` for GitHub Pages.
 
 ## Adding New Portfolio Pieces
 
@@ -72,7 +74,7 @@ React portfolio website for design work, deployed to GitHub Pages at `http://abe
 
 ## Key Dependencies
 
-- `react-router-dom` v6: Client-side routing (in devDependencies but should be in dependencies)
+- `react-router-dom` v6: Client-side routing
 - `react-bootstrap`: Bootstrap components for navbar structure
 - `bootstrap`: Base CSS imported in [index.js](../src/index.js)
 - No state management library (uses React built-ins only)
